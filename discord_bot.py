@@ -1,24 +1,23 @@
 """
-discord_bot.py  ─  SynchronVoice Employee Transcription Bot
-============================================================
-• Auto-joins a voice channel the moment the first employee arrives.
-• Records each speaker's audio separately (per Discord user ID).
-• Every FLUSH_INTERVAL_SEC seconds it transcribes each buffer with
-  Deepgram Nova 3 and posts an embed to #transcriptions.
-• Stereo PCM is downmixed to mono before transcription.
-• RMS-based VAD filters silence/noise to prevent hallucinations.
-• Handles 8-hour sessions via chunked processing (never loads a full
-  session into memory).
-• When the last employee leaves, the session is finalised and the
-  transcript .txt is uploaded to #transcriptions.
+discord_bot.py  —  SynchronVoice Employee Transcription Bot (py-cord edition)
+==============================================================================
+• Uses py-cord's native vc.start_recording() — the ONLY reliable way to
+  capture per-user audio in Python Discord bots (2025+).
+• discord-ext-voice-recv is broken due to sequence rollover bug + new
+  Discord encryption changes. py-cord ships its own working sink system.
+• Auto-joins when the first employee enters any voice channel.
+• Buffers raw PCM per-user, downmixes stereo→mono, applies RMS VAD, then
+  flushes to Deepgram Nova-3 every FLUSH_INTERVAL_SEC seconds.
+• Incremental .txt + .json logs: a crash never loses captured data.
+• Leaves and finalises when the last employee leaves.
 
-Requirements:  pip install -r requirements.txt
-Environment variables (put in .env):
-    DISCORD_BOT_TOKEN  – your bot token
-    DEEPGRAM_API_KEY   – your Deepgram API key
+Install:
+    pip uninstall discord.py discord-ext-voice-recv -y
+    pip install py-cord deepgram-sdk python-dotenv
 
-NOTE: Uses discord-ext-voice-recv for per-user audio.
-      No FFmpeg required for receiving audio.
+.env:
+    DISCORD_BOT_TOKEN = ...
+    DEEPGRAM_API_KEY  = ...
 """
 from __future__ import annotations
 
@@ -36,8 +35,8 @@ from pathlib import Path
 from typing import Optional
 
 import discord
-from discord.ext import commands, voice_recv
-from discord.opus import Decoder as OpusDecoder, OpusError
+from discord.ext import commands
+from discord.sinks import Sink, AudioData
 from dotenv import load_dotenv
 from deepgram import DeepgramClient, PrerecordedOptions
 
@@ -56,11 +55,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger("synchronvoice")
 
-# Silence chatty voice_recv gateway INFO messages
-logging.getLogger("discord.ext.voice_recv.gateway").setLevel(logging.WARNING)
-
 # ─────────────────────────────────────────────────────────────────────────────
-# Config / constants
+# Config
 # ─────────────────────────────────────────────────────────────────────────────
 DISCORD_TOKEN    = os.getenv("DISCORD_BOT_TOKEN")
 DEEPGRAM_API_KEY = os.getenv("DEEPGRAM_API_KEY")
@@ -68,43 +64,42 @@ DEEPGRAM_API_KEY = os.getenv("DEEPGRAM_API_KEY")
 TRANSCRIPTIONS_DIR = Path("transcriptions")
 TRANSCRIPTIONS_DIR.mkdir(exist_ok=True)
 
-# Discord voice delivers raw PCM: 48 kHz, stereo, 16-bit signed little-endian
-SAMPLE_RATE    = 48_000
-CHANNELS       = 2                                          # raw input is stereo
-SAMPLE_WIDTH   = 2                                          # bytes per sample (int16)
+# py-cord sink delivers decoded: 48 kHz, stereo, 16-bit signed PCM
+SAMPLE_RATE  = 48_000
+SAMPLE_WIDTH = 2                           # bytes per sample (int16)
 
-# After downmix to mono:
-MONO_BYTES_PER_SEC = SAMPLE_RATE * 1 * SAMPLE_WIDTH        # 96 000 B/s
+# After stereo→mono downmix:
+MONO_BPS = SAMPLE_RATE * 1 * SAMPLE_WIDTH  # 96 000 B/s
 
-FLUSH_INTERVAL_SEC = 30        # drain buffers every 30 s (better STT context)
-MIN_AUDIO_BYTES    = MONO_BYTES_PER_SEC * 2                # skip < 2 s of mono audio
-MAX_CHUNK_BYTES    = MONO_BYTES_PER_SEC * 55               # ≤ 55 s keeps payload reasonable
+FLUSH_INTERVAL_SEC = 30                    # transcribe every 30 s
+MIN_AUDIO_BYTES    = MONO_BPS // 2         # need ≥ 0.5 s before sending
+MAX_CHUNK_BYTES    = MONO_BPS * 55         # keep request ≤ ~5 MB
 
-# RMS threshold for voice activity detection (0–32767 scale, int16)
-# Packets below this are treated as silence/noise and discarded
-VAD_RMS_THRESHOLD  = 300
+# RMS VAD — only buffers packets with actual voice energy.
+# 100 is conservative; real speech is typically 300–3000.
+# Silent Discord packets have RMS ≈ 0–30.
+VAD_RMS_THRESHOLD = 100
 
 deepgram_client = DeepgramClient(DEEPGRAM_API_KEY)
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Pure helpers
+# Audio helpers
 # ─────────────────────────────────────────────────────────────────────────────
 
 def stereo_to_mono(pcm: bytes) -> bytes:
-    """Downmix 16-bit stereo PCM to mono using audioop."""
+    """Downmix 16-bit stereo PCM → mono."""
     return audioop.tomono(pcm, SAMPLE_WIDTH, 0.5, 0.5)
 
 
-def is_speech(mono_pcm: bytes, threshold: int = VAD_RMS_THRESHOLD) -> bool:
-    """Return True if the RMS energy of mono PCM exceeds the threshold."""
+def is_speech(mono_pcm: bytes) -> bool:
+    """True when RMS energy exceeds VAD_RMS_THRESHOLD."""
     if len(mono_pcm) < SAMPLE_WIDTH * 2:
         return False
-    rms = audioop.rms(mono_pcm, SAMPLE_WIDTH)
-    return rms > threshold
+    return audioop.rms(mono_pcm, SAMPLE_WIDTH) > VAD_RMS_THRESHOLD
 
 
-def pcm_to_wav(mono_pcm: bytes) -> bytes:
-    """Wrap raw mono PCM bytes in a WAV container (mono, 48 kHz, int16)."""
+def build_wav(mono_pcm: bytes) -> bytes:
+    """Wrap mono 48 kHz int16 PCM in a WAV container."""
     buf = io.BytesIO()
     with wave.open(buf, "wb") as wf:
         wf.setnchannels(1)
@@ -114,25 +109,23 @@ def pcm_to_wav(mono_pcm: bytes) -> bytes:
     return buf.getvalue()
 
 
-def call_deepgram(wav_bytes: bytes, user_id: int) -> str:
-    """Send a mono WAV buffer to Deepgram Nova 3 and return the transcript."""
+def call_deepgram(wav_bytes: bytes) -> str:
+    """Send WAV to Deepgram Nova-3 (blocking). Uses non-deprecated SDK API."""
     options = PrerecordedOptions(
         model="nova-3",
         language="en",
         smart_format=True,
         punctuate=True,
-        utterances=False,   # speaker separation already handled by per-user buffers
     )
-    payload = {"buffer": wav_bytes, "mimetype": "audio/wav"}
-    response = deepgram_client.listen.prerecorded.v("1").transcribe_file(payload, options)
+    payload  = {"buffer": wav_bytes, "mimetype": "audio/wav"}
+    response = deepgram_client.listen.rest.v("1").transcribe_file(payload, options)
     try:
-        return response.results.channels[0].alternatives[0].transcript
+        return response.results.channels[0].alternatives[0].transcript or ""
     except (AttributeError, IndexError, KeyError):
         return ""
 
 
 def resolve_member(bot: commands.Bot, user_id: int) -> Optional[discord.Member]:
-    """Find a guild member by user ID across all guilds the bot is in."""
     for guild in bot.guilds:
         m = guild.get_member(user_id)
         if m:
@@ -141,17 +134,10 @@ def resolve_member(bot: commands.Bot, user_id: int) -> Optional[discord.Member]:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# TranscriptionSession
+# TranscriptionSession  —  on-disk logs for one recording session
 # ─────────────────────────────────────────────────────────────────────────────
 
 class TranscriptionSession:
-    """
-    Creates two files at session start:
-        transcriptions/<YYYY-MM-DD_HH-MM-SS>_<channel>.txt   ← human-readable
-        transcriptions/<YYYY-MM-DD_HH-MM-SS>_<channel>.json  ← structured data
-    Both are written incrementally so a crash never loses captured data.
-    """
-
     def __init__(self, guild_id: int, channel_name: str) -> None:
         self.guild_id     = guild_id
         self.channel_name = channel_name
@@ -167,24 +153,21 @@ class TranscriptionSession:
             f.write("=== SynchronVoice Transcription Session ===\n")
             f.write(f"Channel : {channel_name}\n")
             f.write(f"Started : {self.started_at:%Y-%m-%d %H:%M:%S}\n")
-            f.write(f"STT     : Deepgram Nova 3\n")
+            f.write(f"STT     : Deepgram Nova-3\n")
             f.write("=" * 44 + "\n\n")
 
         logger.info("Session started → %s", self.txt_path)
 
     def append(self, username: str, text: str) -> None:
-        """Append one transcription segment (thread-safe: only file I/O)."""
         ts = datetime.now()
         self.entries.append({"timestamp": ts.isoformat(), "username": username, "text": text.strip()})
-        line = f"[{ts:%H:%M:%S}] {username}: {text.strip()}\n"
         with open(self.txt_path, "a", encoding="utf-8") as f:
-            f.write(line)
+            f.write(f"[{ts:%H:%M:%S}] {username}: {text.strip()}\n")
 
     def finalize(self) -> Path:
-        """Write session summary footer + JSON dump. Returns the .txt path."""
         ended_at = datetime.now()
-        duration = ended_at - self.started_at
-        h, rem   = divmod(int(duration.total_seconds()), 3600)
+        dur      = ended_at - self.started_at
+        h, rem   = divmod(int(dur.total_seconds()), 3600)
         m, s     = divmod(rem, 60)
 
         with open(self.txt_path, "a", encoding="utf-8") as f:
@@ -201,34 +184,35 @@ class TranscriptionSession:
                     "channel": self.channel_name,
                     "started_at": self.started_at.isoformat(),
                     "ended_at": ended_at.isoformat(),
-                    "duration_seconds": int(duration.total_seconds()),
+                    "duration_seconds": int(dur.total_seconds()),
                     "entries": self.entries,
                 },
-                f,
-                indent=2,
-                ensure_ascii=False,
+                f, indent=2, ensure_ascii=False,
             )
-
         logger.info("Session finalised → %s", self.txt_path)
         return self.txt_path
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# EmployeeSink  ─  per-user audio buffer + periodic transcription
+# EmployeeSink  —  py-cord native Sink subclass
+#
+# HOW py-cord sinks work:
+#   • vc.start_recording(sink, finished_cb, channel) starts capture.
+#   • py-cord's internal reader decrypts + decodes every Opus packet.
+#   • For every decoded PCM frame it calls sink.write(user_id, AudioData).
+#   • AudioData.file is a BytesIO that GROWS over time (append-only).
+#   • vc.stop_recording() drains remaining audio then fires finished_cb.
+#
+# Our write() hook:
+#   1. Reads only NEW bytes from AudioData.file using a tracked offset.
+#   2. Downmixes stereo → mono.
+#   3. Applies RMS VAD — silent frames are dropped before buffering.
+#   4. Appends speech-only mono PCM to a per-user bytearray.
+#
+# A background asyncio task flushes to Deepgram every FLUSH_INTERVAL_SEC.
 # ─────────────────────────────────────────────────────────────────────────────
 
-class EmployeeSink(voice_recv.AudioSink):
-    """
-    voice_recv calls write(user, data) on a background thread for every
-    received audio packet. We:
-      1. Manually decode Opus → stereo PCM (per-user stateful decoder).
-      2. Downmix stereo → mono immediately in the write() thread.
-      3. Apply RMS VAD — discard silent/noise packets before buffering.
-      4. Every FLUSH_INTERVAL_SEC seconds an asyncio task slices buffers,
-         wraps in WAV, sends to Deepgram Nova 3, appends to session log,
-         and posts an embed to Discord.
-    """
-
+class EmployeeSink(Sink):
     def __init__(
         self,
         bot: commands.Bot,
@@ -239,60 +223,60 @@ class EmployeeSink(voice_recv.AudioSink):
         self.bot          = bot
         self.session      = session
         self.text_channel = text_channel
-        # Keyed by Discord user ID → accumulated raw mono PCM bytes
-        self.buffers: dict[int, bytearray] = defaultdict(bytearray)
-        self._user_names: dict[int, str]   = {}
-        self._decoders: dict[int, OpusDecoder] = {}
-        self._buf_lock = threading.Lock()
-        self._task: Optional[asyncio.Task] = None
 
-    # ── voice_recv.AudioSink hooks ───────────────────────────────────────────
+        # Per-user mono PCM accumulation
+        self._mono_buffers: dict[int, bytearray] = defaultdict(bytearray)
+        # Track how many bytes we've already read from each AudioData.file
+        self._read_offsets: dict[int, int] = defaultdict(int)
+        self._buf_lock   = threading.Lock()
+        self._flush_task: Optional[asyncio.Task] = None
 
-    def wants_opus(self) -> bool:
-        """Return True → we handle Opus decoding manually per-user."""
-        return True
+    # ── py-cord Sink hook ────────────────────────────────────────────────────
 
-    def _get_decoder(self, user_id: int) -> OpusDecoder:
-        if user_id not in self._decoders:
-            self._decoders[user_id] = OpusDecoder()
-        return self._decoders[user_id]
+    def write(self, data: AudioData, user: int) -> None:
+        """
+        Called by py-cord's audio thread for every decoded PCM chunk.
+        `user` is an int (Discord user ID).
+        `data.file` is a BytesIO that grows as audio arrives — we only
+        read the NEW bytes each call via a tracked byte offset.
+        """
+        with self._buf_lock:
+            offset = self._read_offsets[user]
 
-    def write(self, user: Optional[discord.User], data: voice_recv.VoiceData) -> None:
-        """Called from the voice_recv audio thread on every ~20 ms Opus packet."""
-        if user is None:
-            return
-        opus_bytes = data.opus
-        if not opus_bytes:
-            return
-        try:
-            stereo_pcm = self._get_decoder(user.id).decode(opus_bytes, fec=False)
-        except OpusError:
-            return
-        if not stereo_pcm:
+        # Seek to where we last left off and read only new data
+        data.file.seek(offset)
+        new_stereo = data.file.read()
+
+        if not new_stereo:
             return
 
-        # Downmix to mono immediately
-        mono_pcm = stereo_to_mono(stereo_pcm)
+        new_offset = offset + len(new_stereo)
 
-        # VAD: discard silence/noise packets
-        if not is_speech(mono_pcm):
+        # Downmix stereo → mono
+        mono = stereo_to_mono(new_stereo)
+
+        # VAD: skip mostly-silent chunks
+        if not is_speech(mono):
+            with self._buf_lock:
+                self._read_offsets[user] = new_offset
             return
 
         with self._buf_lock:
-            self.buffers[user.id] += mono_pcm
-            if user.id not in self._user_names:
-                self._user_names[user.id] = user.display_name
+            self._mono_buffers[user] += mono
+            self._read_offsets[user] = new_offset
+
+        logger.debug("write() user=%d  new_bytes=%d  buf_total=%d",
+                     user, len(new_stereo), len(self._mono_buffers[user]))
 
     def cleanup(self) -> None:
-        """Cancel our flush task when voice_recv stops."""
-        if self._task and not self._task.done():
-            self._task.cancel()
+        """Called by py-cord when stop_recording() completes."""
+        if self._flush_task and not self._flush_task.done():
+            self._flush_task.cancel()
 
     # ── lifecycle ────────────────────────────────────────────────────────────
 
-    def start_processing(self) -> None:
-        """Start the periodic flush-and-transcribe loop on the event loop."""
-        self._task = asyncio.create_task(self._flush_loop())
+    def start_flush_loop(self) -> None:
+        self._flush_task = asyncio.create_task(self._flush_loop())
 
     # ── internal processing ──────────────────────────────────────────────────
 
@@ -302,33 +286,34 @@ class EmployeeSink(voice_recv.AudioSink):
             await self._drain_buffers()
 
     async def _drain_buffers(self) -> None:
-        """Snapshot buffers (under lock) then transcribe each chunk in parallel."""
         to_process: dict[int, bytes] = {}
         with self._buf_lock:
-            for user_id in list(self.buffers):
-                buf = self.buffers[user_id]
+            for uid in list(self._mono_buffers):
+                buf = self._mono_buffers[uid]
                 if len(buf) < MIN_AUDIO_BYTES:
                     continue
                 chunk = bytes(buf[:MAX_CHUNK_BYTES])
-                self.buffers[user_id] = bytearray(buf[MAX_CHUNK_BYTES:])
-                to_process[user_id] = chunk
+                self._mono_buffers[uid] = bytearray(buf[MAX_CHUNK_BYTES:])
+                to_process[uid] = chunk
 
         if to_process:
+            logger.info("Draining %d user buffer(s) to Deepgram…", len(to_process))
             await asyncio.gather(
                 *(self._transcribe(uid, chunk) for uid, chunk in to_process.items()),
                 return_exceptions=True,
             )
 
     async def drain_final(self) -> None:
-        """Drain everything remaining in buffers at session end."""
+        """Flush all remaining audio at session end (ignores MIN_AUDIO_BYTES)."""
         to_process: dict[int, bytes] = {}
         with self._buf_lock:
-            for user_id, buf in list(self.buffers.items()):
-                if len(buf) >= MIN_AUDIO_BYTES:
-                    to_process[user_id] = bytes(buf)
-                self.buffers[user_id] = bytearray()
+            for uid, buf in list(self._mono_buffers.items()):
+                if buf:
+                    to_process[uid] = bytes(buf)
+                self._mono_buffers[uid] = bytearray()
 
         if to_process:
+            logger.info("Final drain: %d user buffer(s)…", len(to_process))
             await asyncio.gather(
                 *(self._transcribe(uid, chunk) for uid, chunk in to_process.items()),
                 return_exceptions=True,
@@ -336,22 +321,17 @@ class EmployeeSink(voice_recv.AudioSink):
 
     async def _transcribe(self, user_id: int, mono_pcm: bytes) -> None:
         try:
-            # Final VAD check on the full chunk
-            if not is_speech(mono_pcm):
-                return
-
-            wav_bytes = pcm_to_wav(mono_pcm)
+            wav  = build_wav(mono_pcm)
             loop = asyncio.get_event_loop()
-            text = await loop.run_in_executor(None, call_deepgram, wav_bytes, user_id)
+            text = await loop.run_in_executor(None, call_deepgram, wav)
+
             if not text or not text.strip():
+                logger.info("Empty transcript for user %d (%.1f s audio)",
+                            user_id, len(mono_pcm) / MONO_BPS)
                 return
 
             member   = resolve_member(self.bot, user_id)
-            username = (
-                member.display_name
-                if member
-                else self._user_names.get(user_id, f"User_{user_id}")
-            )
+            username = member.display_name if member else f"User_{user_id}"
 
             self.session.append(username, text)
             logger.info("[%s] %s", username, text[:120])
@@ -394,7 +374,7 @@ async def on_ready() -> None:
     logger.info("Logged in as %s (ID: %d)", bot.user, bot.user.id)
     for g in bot.guilds:
         logger.info("  Guild: %s", g.name)
-    logger.info("Listening for employees to join voice channels…")
+    logger.info("Ready. Listening for employees entering voice channels…")
 
 
 @bot.event
@@ -413,7 +393,7 @@ async def on_voice_state_update(
         if guild.id not in active_sessions and guild.id not in _joining_guilds:
             await _start_session(after.channel)
 
-    # Employee left or moved away from the bot's channel
+    # Employee left or switched channels
     elif before.channel is not None and after.channel != before.channel:
         if guild.id in active_sessions:
             bot_channel = active_sessions[guild.id]["vc"].channel
@@ -427,19 +407,23 @@ async def on_voice_state_update(
 # Session helpers
 # ─────────────────────────────────────────────────────────────────────────────
 
+async def _recording_finished(
+    sink: EmployeeSink, channel: discord.VoiceChannel, *args
+) -> None:
+    """py-cord fires this after stop_recording() finishes draining."""
+    logger.info("py-cord recording finished for #%s", channel.name)
+
+
 async def _start_session(channel: discord.VoiceChannel) -> None:
     guild = channel.guild
     _joining_guilds.add(guild.id)
     try:
         text_channel = discord.utils.get(guild.text_channels, name="transcriptions")
         if text_channel is None:
-            logger.warning(
-                "No #transcriptions channel in %s — saving to disk only.",
-                guild.name,
-            )
+            logger.warning("No #transcriptions channel in %s — disk only.", guild.name)
 
         try:
-            vc = await channel.connect(cls=voice_recv.VoiceRecvClient)
+            vc = await channel.connect()
         except discord.ClientException:
             logger.warning("Already connected in %s", guild.name)
             return
@@ -450,8 +434,9 @@ async def _start_session(channel: discord.VoiceChannel) -> None:
         session = TranscriptionSession(guild.id, channel.name)
         sink    = EmployeeSink(bot, session, text_channel)
 
-        vc.listen(sink)
-        sink.start_processing()
+        # py-cord native recording — calls sink.write(user_id, AudioData) per frame
+        vc.start_recording(sink, _recording_finished, channel)
+        sink.start_flush_loop()
 
         active_sessions[guild.id] = {
             "vc": vc,
@@ -459,12 +444,12 @@ async def _start_session(channel: discord.VoiceChannel) -> None:
             "session": session,
             "text_channel": text_channel,
         }
-        logger.info("▶ Session started – #%s (%s)", channel.name, guild.name)
+        logger.info("▶ Recording started – #%s (%s)", channel.name, guild.name)
 
         if text_channel:
             await text_channel.send(
                 f"🔴 **Recording started** in **#{channel.name}**\n"
-                f"Session `{session.session_id}` — speaker transcriptions appear below in real-time."
+                f"Session `{session.session_id}` — transcriptions appear every {FLUSH_INTERVAL_SEC}s."
             )
     finally:
         _joining_guilds.discard(guild.id)
@@ -475,22 +460,30 @@ async def _end_session(guild: discord.Guild) -> None:
     if not info:
         return
 
-    vc:      discord.VoiceClient  = info["vc"]
-    sink:    EmployeeSink          = info["sink"]
-    session: TranscriptionSession  = info["session"]
-    text_channel                   = info["text_channel"]
+    vc:          discord.VoiceClient  = info["vc"]
+    sink:        EmployeeSink          = info["sink"]
+    session:     TranscriptionSession  = info["session"]
+    text_channel                       = info["text_channel"]
 
+    # 1. Stop our flush loop
     sink.cleanup()
 
+    # 2. Stop py-cord recording (triggers _recording_finished callback)
     try:
-        if vc.is_listening():
-            vc.stop_listening()
+        vc.stop_recording()
     except Exception:
         pass
 
+    # Small delay to let the finished callback fire
+    await asyncio.sleep(0.5)
+
+    # 3. Flush any remaining audio buffers to Deepgram
     await sink.drain_final()
+
+    # 4. Finalise log files
     log_path = session.finalize()
 
+    # 5. Disconnect
     try:
         await vc.disconnect()
     except Exception:
@@ -507,11 +500,12 @@ async def _end_session(guild: discord.Guild) -> None:
     speakers = sorted({e["username"] for e in session.entries})
 
     embed = discord.Embed(title="✅ Session Complete", color=0x3498DB)
-    embed.add_field(name="Channel",  value=session.channel_name,           inline=True)
-    embed.add_field(name="Duration", value=f"{h:02d}h {m:02d}m {s:02d}s", inline=True)
-    embed.add_field(name="Speakers", value=", ".join(speakers) or "–",     inline=False)
-    embed.add_field(name="Segments", value=str(len(session.entries)),       inline=True)
-    embed.add_field(name="Saved to", value=str(log_path),                  inline=False)
+    embed.add_field(name="Channel",  value=session.channel_name,            inline=True)
+    embed.add_field(name="Duration", value=f"{h:02d}h {m:02d}m {s:02d}s",  inline=True)
+    embed.add_field(name="STT",      value="Deepgram Nova-3",               inline=True)
+    embed.add_field(name="Speakers", value=", ".join(speakers) or "–",      inline=False)
+    embed.add_field(name="Segments", value=str(len(session.entries)),        inline=True)
+    embed.add_field(name="Saved to", value=str(log_path),                   inline=False)
     embed.timestamp = discord.utils.utcnow()
     await text_channel.send(embed=embed)
 
@@ -553,7 +547,7 @@ async def cmd_leave(ctx: commands.Context) -> None:
 
 @bot.command(name="status")
 async def cmd_status(ctx: commands.Context) -> None:
-    """Show the current session status."""
+    """Show current session status and buffer sizes."""
     if ctx.guild.id not in active_sessions:
         await ctx.send("😴 No active recording session.")
         return
@@ -561,24 +555,48 @@ async def cmd_status(ctx: commands.Context) -> None:
     info    = active_sessions[ctx.guild.id]
     session = info["session"]
     vc      = info["vc"]
+    sink: EmployeeSink = info["sink"]
     dur     = datetime.now() - session.started_at
     h, rem  = divmod(int(dur.total_seconds()), 3600)
     m, s    = divmod(rem, 60)
     present = [mem.display_name for mem in vc.channel.members if not mem.bot]
 
+    with sink._buf_lock:
+        buf_info = {uid: len(b) for uid, b in sink._mono_buffers.items() if b}
+
     embed = discord.Embed(title="📊 Session Status", color=0xF39C12)
-    embed.add_field(name="Channel",      value=vc.channel.name,                       inline=True)
-    embed.add_field(name="Duration",     value=f"{h:02d}h {m:02d}m {s:02d}s",        inline=True)
-    embed.add_field(name="STT Model",    value="Deepgram Nova 3",                     inline=True)
-    embed.add_field(name="Present now",  value=", ".join(present) or "–",             inline=False)
-    embed.add_field(name="Segments",     value=str(len(session.entries)),              inline=True)
-    embed.add_field(name="Session file", value=str(session.txt_path),                 inline=False)
+    embed.add_field(name="Channel",     value=vc.channel.name,                       inline=True)
+    embed.add_field(name="Duration",    value=f"{h:02d}h {m:02d}m {s:02d}s",        inline=True)
+    embed.add_field(name="STT Model",   value="Deepgram Nova-3",                     inline=True)
+    embed.add_field(name="Present now", value=", ".join(present) or "–",             inline=False)
+    embed.add_field(name="Segments",    value=str(len(session.entries)),              inline=True)
+    if buf_info:
+        members_buf = []
+        for uid, sz in buf_info.items():
+            m_obj = resolve_member(bot, uid)
+            name  = m_obj.display_name if m_obj else f"User_{uid}"
+            members_buf.append(f"{name}: {sz // 1000}kB")
+        embed.add_field(name="Buffered", value="\n".join(members_buf), inline=False)
+    embed.add_field(name="Session file", value=str(session.txt_path), inline=False)
     await ctx.send(embed=embed)
+
+
+@bot.command(name="flushtx")
+@commands.has_permissions(manage_channels=True)
+async def cmd_flush(ctx: commands.Context) -> None:
+    """Force-flush all audio buffers to Deepgram right now."""
+    if ctx.guild.id not in active_sessions:
+        await ctx.send("❌ No active session.")
+        return
+    await ctx.send("⏳ Flushing buffers…")
+    sink: EmployeeSink = active_sessions[ctx.guild.id]["sink"]
+    await sink._drain_buffers()
+    await ctx.send("✅ Flush complete.")
 
 
 @bot.command(name="transcript")
 async def cmd_transcript(ctx: commands.Context) -> None:
-    """Upload the current in-progress transcript file."""
+    """Download the current in-progress transcript."""
     if ctx.guild.id not in active_sessions:
         await ctx.send("❌ No active session.")
         return
@@ -586,26 +604,25 @@ async def cmd_transcript(ctx: commands.Context) -> None:
     if path.stat().st_size < 8_000_000:
         await ctx.send("📄 Current transcript:", file=discord.File(str(path)))
     else:
-        await ctx.send(f"📄 Transcript is large — find it at `{path}`.")
+        await ctx.send(f"📄 Transcript too large — find it at `{path}`.")
 
 
 @bot.command(name="help_sv")
 async def cmd_help(ctx: commands.Context) -> None:
     """Show all SynchronVoice commands."""
-    embed = discord.Embed(
-        title="🎙 SynchronVoice – Command Reference",
-        color=0x5865F2,
-    )
+    embed = discord.Embed(title="🎙 SynchronVoice – Commands", color=0x5865F2)
     embed.add_field(
         name="Auto behaviour",
-        value="Bot auto-joins when the first employee enters a voice channel and leaves when the last one does.",
+        value=(f"Bot joins on first employee entry, leaves when the last one does. "
+               f"Transcripts sent every {FLUSH_INTERVAL_SEC}s via Deepgram Nova-3."),
         inline=False,
     )
-    embed.add_field(name="!join",       value="Manually start recording (needs Manage Channels)", inline=False)
-    embed.add_field(name="!leave",      value="Manually stop recording (needs Manage Channels)",  inline=False)
-    embed.add_field(name="!status",     value="Show current session info + STT model",            inline=False)
-    embed.add_field(name="!transcript", value="Download the in-progress transcript right now",    inline=False)
-    embed.add_field(name="!help_sv",    value="Show this message",                                inline=False)
+    embed.add_field(name="!join",       value="Manually start recording (Manage Channels)",  inline=False)
+    embed.add_field(name="!leave",      value="Manually stop recording (Manage Channels)",   inline=False)
+    embed.add_field(name="!flushtx",    value="Force-flush audio buffers to Deepgram now",   inline=False)
+    embed.add_field(name="!status",     value="Session info + live buffer sizes per user",   inline=False)
+    embed.add_field(name="!transcript", value="Download the in-progress transcript",         inline=False)
+    embed.add_field(name="!help_sv",    value="This message",                                inline=False)
     await ctx.send(embed=embed)
 
 
