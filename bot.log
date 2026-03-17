@@ -1,0 +1,765 @@
+2026-03-17 16:09:32,247 [INFO] discord.client – logging in using static token
+2026-03-17 16:09:34,946 [INFO] discord.gateway – Shard ID None has connected to Gateway (Session ID: be62a009c7bf4e7671822c6a9e6aca0a).
+2026-03-17 16:09:36,956 [INFO] synchronvoice – Logged in as SynchronVoice#3958 (ID: 1417141330915885107)
+2026-03-17 16:09:36,957 [INFO] synchronvoice –   Guild: Mera server
+2026-03-17 16:09:36,958 [INFO] synchronvoice – Listening for employees to join voice channels…
+2026-03-17 16:09:42,119 [INFO] discord.voice_state – Connecting to voice...
+2026-03-17 16:09:42,120 [INFO] discord.voice_state – Starting voice handshake... (connection attempt 1)
+2026-03-17 16:09:42,825 [INFO] discord.voice_state – Voice handshake complete. Endpoint found: c-bom10-d2e356a0.discord.media:2083
+2026-03-17 16:09:43,362 [INFO] discord.voice_state – Voice connection complete.
+2026-03-17 16:09:43,365 [INFO] synchronvoice – Session started → transcriptions\2026-03-17_16-09-43_General.txt
+2026-03-17 16:09:43,372 [INFO] synchronvoice – ▶ Session started – #General (Mera server)
+2026-03-17 16:09:45,239 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:46,058 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:47,084 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:48,064 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:49,077 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:50,088 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:51,064 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:52,076 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:53,071 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:54,071 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:54,802 [INFO] httpx – HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2026-03-17 16:09:54,805 [INFO] synchronvoice – [karrrtik]  Conn pivotal service to the domestic land!
+2026-03-17 16:09:55,069 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:56,070 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:57,071 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:58,076 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:09:59,073 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:00,136 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:01,079 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:02,081 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:03,078 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:04,084 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:05,125 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:06,081 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:06,406 [INFO] httpx – HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2026-03-17 16:10:06,409 [INFO] synchronvoice – [karrrtik]  Lawless Yong
+2026-03-17 16:10:07,096 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:08,094 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:09,084 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:10,094 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:11,115 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:12,089 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:13,090 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:14,094 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:15,092 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:16,112 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:17,092 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:18,095 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:18,275 [INFO] httpx – HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2026-03-17 16:10:18,278 [INFO] synchronvoice – [karrrtik]  What aBCOT.
+2026-03-17 16:10:19,095 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:20,099 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:21,101 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:22,101 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:23,101 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:24,142 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:25,112 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:26,104 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:27,170 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:28,105 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:29,112 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:30,113 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:31,177 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:32,203 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:33,139 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:34,112 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:35,114 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:36,114 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:37,117 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:38,138 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:39,168 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:40,203 [INFO] httpx – HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2026-03-17 16:10:40,205 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:40,206 [INFO] synchronvoice – [karrrtik]  ani
+2026-03-17 16:10:41,213 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:42,194 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:43,126 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:44,129 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:45,125 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:46,139 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:47,167 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:48,132 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:49,174 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:50,132 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:51,135 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:52,164 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:53,137 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:54,139 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:55,212 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:56,138 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:57,140 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:58,140 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:10:59,247 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:11:00,258 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:11:01,143 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:11:02,142 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:11:03,143 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:11:04,146 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:11:05,147 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:11:06,213 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:11:07,149 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:11:08,149 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:20:58,395 [INFO] discord.client – logging in using static token
+2026-03-17 16:21:01,201 [INFO] discord.gateway – Shard ID None has connected to Gateway (Session ID: 592a1e5b284883c95ff08f149ebe2af0).
+2026-03-17 16:21:03,208 [INFO] synchronvoice – Logged in as SynchronVoice#3958 (ID: 1417141330915885107)
+2026-03-17 16:21:03,210 [INFO] synchronvoice –   Guild: Mera server
+2026-03-17 16:21:03,211 [INFO] synchronvoice – Listening for employees to join voice channels…
+2026-03-17 16:22:48,296 [INFO] discord.voice_state – Connecting to voice...
+2026-03-17 16:22:48,298 [INFO] discord.voice_state – Starting voice handshake... (connection attempt 1)
+2026-03-17 16:22:48,936 [INFO] discord.voice_state – Voice handshake complete. Endpoint found: india11022.discord.media:443
+2026-03-17 16:22:49,780 [INFO] discord.voice_state – Voice connection complete.
+2026-03-17 16:22:49,793 [INFO] synchronvoice – Session started → transcriptions\2026-03-17_16-22-49_General.txt
+2026-03-17 16:22:49,799 [INFO] synchronvoice – ▶ Session started – #General (Mera server)
+2026-03-17 16:22:50,414 [WARNING] discord.ext.voice_recv.opus – 1 packets were lost being flushed in decoder-119538
+ --> (last=27589) [27591, 27590]
+2026-03-17 16:22:50,791 [WARNING] discord.ext.voice_recv.opus – 2 packets were lost being flushed in decoder-119538
+ --> (last=27591) [27592, 27593, 27594]
+2026-03-17 16:22:51,204 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:22:52,200 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:22:53,204 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:22:54,205 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:22:55,205 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:22:56,205 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:22:57,210 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:22:58,230 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:22:59,208 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:00,209 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:01,213 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:02,210 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:03,210 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:04,239 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:05,263 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:05,878 [WARNING] discord.ext.voice_recv.opus – 3 packets were lost being flushed in decoder-119538
+ --> (last=28007) [28009, 28008, 28010, 28011]
+2026-03-17 16:23:06,219 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:07,236 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:08,218 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:09,213 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:10,218 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:10,307 [INFO] httpx – HTTP Request: POST https://api.deepgram.com/v1/listen?filler_words=false&language=en&model=nova-3&punctuate=true&smart_format=true&utterances=false "HTTP/1.1 200 OK"
+2026-03-17 16:23:11,230 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:12,223 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:13,252 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:14,227 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:15,220 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:16,294 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:17,224 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:18,243 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:19,262 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:20,226 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:21,227 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:22,337 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:23,258 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:24,232 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:25,233 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:26,247 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:27,231 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:28,233 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:29,238 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:29,289 [INFO] httpx – HTTP Request: POST https://api.deepgram.com/v1/listen?filler_words=false&language=en&model=nova-3&punctuate=true&smart_format=true&utterances=false "HTTP/1.1 200 OK"
+2026-03-17 16:23:30,240 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:31,241 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:32,240 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:33,245 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:34,241 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:35,244 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:35,937 [WARNING] discord.ext.voice_recv.opus – 2 packets were lost being flushed in decoder-119538
+ --> (last=28588) [28590, 28589, 28591]
+2026-03-17 16:23:36,242 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:37,244 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:38,308 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:39,244 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:40,247 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:41,247 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:42,262 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:43,284 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:44,302 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:45,251 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:46,253 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:47,324 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:48,262 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:49,264 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:49,917 [INFO] httpx – HTTP Request: POST https://api.deepgram.com/v1/listen?filler_words=false&language=en&model=nova-3&punctuate=true&smart_format=true&utterances=false "HTTP/1.1 200 OK"
+2026-03-17 16:23:50,255 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:51,314 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:52,257 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:53,262 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:54,257 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:55,296 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:56,259 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:57,283 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:58,301 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:23:59,263 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:00,269 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:01,276 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:02,280 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:03,285 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:04,269 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:05,277 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:06,272 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:07,273 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:08,278 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:09,279 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:09,587 [INFO] httpx – HTTP Request: POST https://api.deepgram.com/v1/listen?filler_words=false&language=en&model=nova-3&punctuate=true&smart_format=true&utterances=false "HTTP/1.1 200 OK"
+2026-03-17 16:24:10,277 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:11,280 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:12,278 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:13,332 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:14,282 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:15,289 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:16,285 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:17,416 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:18,310 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:19,289 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:20,287 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:21,289 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:22,293 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:23,328 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:24,310 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:25,329 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:26,219 [WARNING] discord.ext.voice_recv.opus – 5 packets were lost being flushed in decoder-119538
+ --> (last=29800) [29802, 29801, 29803, 29804, 29805, 29806]
+2026-03-17 16:24:26,353 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:27,294 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:28,296 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:29,302 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:29,672 [INFO] httpx – HTTP Request: POST https://api.deepgram.com/v1/listen?filler_words=false&language=en&model=nova-3&punctuate=true&smart_format=true&utterances=false "HTTP/1.1 200 OK"
+2026-03-17 16:24:30,317 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:31,299 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:32,300 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:33,301 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:34,303 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:35,308 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:36,335 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:37,320 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:38,314 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:39,333 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:40,367 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:41,310 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:42,379 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:43,314 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:44,318 [INFO] discord.ext.voice_recv.reader – Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-03-17 16:24:45,447 [INFO] synchronvoice – Session finalised → transcriptions\2026-03-17_16-22-49_General.txt
+2026-03-17 16:24:45,566 [INFO] discord.voice_state – The voice handshake is being terminated for Channel ID 1417140456801964128 (Guild ID 1417140456134807694)
+2026-03-17 16:24:46,093 [INFO] synchronvoice – ⏹ Session ended for Mera server → transcriptions\2026-03-17_16-22-49_General.txt
+2026-03-17 16:24:52,246 [INFO] httpx – HTTP Request: POST https://api.deepgram.com/v1/listen?filler_words=false&language=en&model=nova-3&punctuate=true&smart_format=true&utterances=false "HTTP/1.1 200 OK"
+2026-03-17 16:45:49,620 [DEBUG] asyncio – Using proactor: IocpProactor
+2026-03-17 16:45:49,622 [INFO] discord.client – logging in using static token
+2026-03-17 16:45:52,289 [INFO] discord.gateway – Shard ID None has connected to Gateway (Session ID: a41f657a90e49c602a1241319b32964c).
+2026-03-17 16:45:54,310 [INFO] synchronvoice – Logged in as SynchronVoice#3958 (ID: 1417141330915885107)
+2026-03-17 16:45:54,311 [INFO] synchronvoice –   Guild: Mera server
+2026-03-17 16:45:54,312 [INFO] synchronvoice – Listening for employees to join voice channels…
+2026-03-17 16:46:59,352 [INFO] discord.voice_state – Connecting to voice...
+2026-03-17 16:46:59,355 [INFO] discord.voice_state – Starting voice handshake... (connection attempt 1)
+2026-03-17 16:47:00,006 [INFO] discord.voice_state – Voice handshake complete. Endpoint found: c-bom06-10bdcf2b.discord.media:443
+2026-03-17 16:47:00,482 [INFO] discord.voice_state – Voice connection complete.
+2026-03-17 16:47:00,488 [INFO] synchronvoice – Session started → transcriptions\2026-03-17_16-47-00_General.txt
+2026-03-17 16:47:00,494 [INFO] synchronvoice – ▶ Session started – #General (Mera server)
+2026-03-17 16:47:00,817 [ERROR] discord.ext.voice_recv.router – Error in <PacketRouter(packet-router-2603f3b8090, started daemon 20864)> loop
+Traceback (most recent call last):
+  File "C:\Users\karti\AppData\Roaming\Python\Python311\site-packages\discord\ext\voice_recv\router.py", line 98, in run
+    self._do_run()
+  File "C:\Users\karti\AppData\Roaming\Python\Python311\site-packages\discord\ext\voice_recv\router.py", line 111, in _do_run
+    data = decoder.pop_data()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karti\AppData\Roaming\Python\Python311\site-packages\discord\ext\voice_recv\opus.py", line 88, in pop_data
+    return self._process_packet(packet)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karti\AppData\Roaming\Python\Python311\site-packages\discord\ext\voice_recv\opus.py", line 135, in _process_packet
+    packet, pcm = self._decode_packet(packet)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karti\AppData\Roaming\Python\Python311\site-packages\discord\ext\voice_recv\opus.py", line 154, in _decode_packet
+    pcm = self._decoder.decode(packet.decrypted_data, fec=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karti\AppData\Roaming\Python\Python311\site-packages\discord\opus.py", line 502, in decode
+    ret = _lib.opus_decode(self._state, data, len(data) if data else 0, pcm_ptr, frame_size, fec)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karti\AppData\Roaming\Python\Python311\site-packages\discord\opus.py", line 142, in _err_lt
+    raise OpusError(result)
+discord.opus.OpusError: corrupted stream
+2026-03-17 16:47:19,956 [DEBUG] httpcore.connection – connect_tcp.started host='api.deepgram.com' port=443 local_address=None timeout=10.0 socket_options=None
+2026-03-17 16:47:20,972 [DEBUG] httpcore.connection – connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002603F395E90>
+2026-03-17 16:47:20,972 [DEBUG] httpcore.connection – start_tls.started ssl_context=<ssl.SSLContext object at 0x000002603F9F4A70> server_hostname='api.deepgram.com' timeout=10.0
+2026-03-17 16:47:21,370 [DEBUG] httpcore.connection – start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002603FA10F90>
+2026-03-17 16:47:21,371 [DEBUG] httpcore.http11 – send_request_headers.started request=<Request [b'POST']>
+2026-03-17 16:47:21,372 [DEBUG] httpcore.http11 – send_request_headers.complete
+2026-03-17 16:47:21,372 [DEBUG] httpcore.http11 – send_request_body.started request=<Request [b'POST']>
+2026-03-17 16:47:21,373 [DEBUG] httpcore.http11 – send_request_body.complete
+2026-03-17 16:47:21,373 [DEBUG] httpcore.http11 – receive_response_headers.started request=<Request [b'POST']>
+2026-03-17 16:47:22,274 [DEBUG] httpcore.http11 – receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'content-type', b'application/json'), (b'dg-project-id', b'1ba9cda1-02fd-4162-8159-befbe9169479'), (b'vary', b'origin, access-control-request-method, access-control-request-headers'), (b'vary', b'accept-encoding'), (b'access-control-allow-credentials', b'true'), (b'access-control-expose-headers', b'dg-model-name,dg-model-uuid,dg-additional-model-uuids,dg-char-count,dg-request-id,dg-project-id,dg-error,dg-breaks-applied,dg-pronunciations-applied,dg-pronunciation-warnings'), (b'content-encoding', b'zstd'), (b'dg-request-id', b'f07c2d75-0523-454b-8b48-b6585837c711'), (b'transfer-encoding', b'chunked'), (b'date', b'Tue, 17 Mar 2026 11:17:21 GMT')])
+2026-03-17 16:47:22,276 [DEBUG] httpcore.http11 – receive_response_body.started request=<Request [b'POST']>
+2026-03-17 16:47:22,277 [DEBUG] httpcore.http11 – receive_response_body.complete
+2026-03-17 16:47:22,277 [DEBUG] httpcore.http11 – response_closed.started
+2026-03-17 16:47:22,278 [DEBUG] httpcore.http11 – response_closed.complete
+2026-03-17 16:47:22,278 [DEBUG] httpcore.connection – close.started
+2026-03-17 16:47:22,279 [DEBUG] httpcore.connection – close.complete
+2026-03-17 16:47:22,285 [DEBUG] synchronvoice – [transcribe] user=951911415214665729 pcm=13440 bytes → '<empty>'
+2026-03-17 16:47:22,289 [INFO] synchronvoice – Session finalised → transcriptions\2026-03-17_16-47-00_General.txt
+2026-03-17 16:47:22,289 [INFO] discord.voice_state – The voice handshake is being terminated for Channel ID 1417140456801964128 (Guild ID 1417140456134807694)
+2026-03-17 16:47:22,724 [INFO] synchronvoice – ⏹ Session ended for Mera server → transcriptions\2026-03-17_16-47-00_General.txt
+2026-03-17 17:01:23,971 [DEBUG] asyncio – Using proactor: IocpProactor
+2026-03-17 17:01:23,975 [INFO] discord.client – logging in using static token
+2026-03-17 17:01:26,738 [INFO] discord.gateway – Shard ID None has connected to Gateway (Session ID: ae44fb45191ada985ad4bae3199856db).
+2026-03-17 17:01:28,748 [INFO] synchronvoice – Logged in as SynchronVoice#3958 (ID: 1417141330915885107)
+2026-03-17 17:01:28,749 [INFO] synchronvoice –   Guild: Mera server
+2026-03-17 17:01:28,749 [INFO] synchronvoice – Listening for employees to join voice channels…
+2026-03-17 17:01:33,798 [INFO] discord.voice_state – Connecting to voice...
+2026-03-17 17:01:33,799 [INFO] discord.voice_state – Starting voice handshake... (connection attempt 1)
+2026-03-17 17:01:34,779 [INFO] discord.voice_state – Voice handshake complete. Endpoint found: c-bom08-a5471f7e.discord.media:2083
+2026-03-17 17:01:35,733 [INFO] discord.voice_state – Voice connection complete.
+2026-03-17 17:01:35,995 [INFO] synchronvoice – Session started → transcriptions\2026-03-17_17-01-35_General.txt
+2026-03-17 17:01:36,162 [INFO] synchronvoice – ▶ Session started – #General (Mera server)
+2026-03-17 17:01:41,158 [DEBUG] websockets.client – = connection is CONNECTING
+2026-03-17 17:01:41,163 [DEBUG] websockets.client – > GET /v1/listen?channels=2&encoding=opus&interim_results=true&language=en&model=nova-3&punctuate=true&sample_rate=48000&smart_format=true&utterance_end_ms=1000&vad_events=true HTTP/1.1
+2026-03-17 17:01:41,212 [DEBUG] websockets.client – > Host: api.deepgram.com
+2026-03-17 17:01:41,213 [DEBUG] websockets.client – > Upgrade: websocket
+2026-03-17 17:01:41,213 [DEBUG] websockets.client – > Connection: Upgrade
+2026-03-17 17:01:41,221 [DEBUG] websockets.client – > Sec-WebSocket-Key: /c93Lx4zo+D1+kLZ/mbLEw==
+2026-03-17 17:01:41,223 [DEBUG] websockets.client – > Sec-WebSocket-Version: 13
+2026-03-17 17:01:41,224 [DEBUG] websockets.client – > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-03-17 17:01:41,225 [DEBUG] websockets.client – > Accept: application/json
+2026-03-17 17:01:41,227 [DEBUG] websockets.client – > Authorization: Token 0a1dcd9b9d74e5b5b55cf37f5a15267ebe2ac575
+2026-03-17 17:01:41,229 [DEBUG] websockets.client – > User-Agent: @deepgram/sdk/v3.10.1 python/11.9
+2026-03-17 17:01:41,231 [DEBUG] websockets.client – > User-Agent: Python/3.11 websockets/13.1
+2026-03-17 17:01:41,605 [DEBUG] websockets.client – < HTTP/1.1 101 Switching Protocols
+2026-03-17 17:01:41,608 [DEBUG] websockets.client – < connection: upgrade
+2026-03-17 17:01:41,623 [DEBUG] websockets.client – < upgrade: websocket
+2026-03-17 17:01:41,623 [DEBUG] websockets.client – < sec-websocket-accept: B0NnzAmWx16aDNotoribY6BFr28=
+2026-03-17 17:01:41,624 [DEBUG] websockets.client – < dg-project-id: 1ba9cda1-02fd-4162-8159-befbe9169479
+2026-03-17 17:01:41,625 [DEBUG] websockets.client – < vary: origin, access-control-request-method, access-control-request-headers
+2026-03-17 17:01:41,626 [DEBUG] websockets.client – < access-control-allow-credentials: true
+2026-03-17 17:01:41,627 [DEBUG] websockets.client – < access-control-expose-headers: dg-model-name,dg-model-uuid,dg-additional-model-uuids,dg-char-count,dg-request-id,dg-project-id,dg-error,dg-breaks-applied,dg-pronunciations-applied,dg-pronunciation-warnings
+2026-03-17 17:01:41,627 [DEBUG] websockets.client – < dg-request-id: 78542522-6f60-4f6e-b68f-9b3dea6b5697
+2026-03-17 17:01:41,628 [DEBUG] websockets.client – < date: Tue, 17 Mar 2026 11:31:40 GMT
+2026-03-17 17:01:41,628 [DEBUG] websockets.client – = connection is OPEN
+2026-03-17 17:01:41,682 [INFO] synchronvoice – Deepgram Live opened for karrrtik (user 951911415214665729)
+2026-03-17 17:01:41,683 [DEBUG] websockets.client – > BINARY f9 0a c0 cf 87 99 45 7e ce 14 50 5b 3f 92 c8 71 ... 09 2f 46 80 01 0d fa fa [160 bytes]
+2026-03-17 17:01:41,684 [DEBUG] websockets.client – > BINARY de c4 e5 d1 3a 23 9e 05 fd 6c f0 f0 6c ac a1 ba ... e4 b1 f0 81 01 0d fa fa [165 bytes]
+2026-03-17 17:01:41,688 [DEBUG] websockets.client – > BINARY b2 a6 80 43 f3 a5 84 35 92 b0 f1 b5 7e 25 70 35 ... ce 62 3e 82 01 0d fa fa [156 bytes]
+2026-03-17 17:01:41,690 [DEBUG] websockets.client – > BINARY f4 6c 33 3c b2 53 60 73 69 08 63 ec 9d c9 a8 09 ... e4 bd 92 83 01 0d fa fa [149 bytes]
+2026-03-17 17:01:41,691 [DEBUG] websockets.client – > BINARY 96 de 6c 09 cb c1 a9 ba 71 04 88 21 94 37 02 85 ... bd 05 15 84 01 0d fa fa [161 bytes]
+2026-03-17 17:01:41,692 [DEBUG] websockets.client – > BINARY 9c 3b 99 20 b1 cb 23 c7 be a0 fb 9f fe 72 b6 a5 ... 2f da 0b 85 01 0d fa fa [174 bytes]
+2026-03-17 17:01:41,693 [DEBUG] websockets.client – > BINARY 7c c4 2b e1 f1 f3 e3 eb 5c 61 e2 98 60 df 7d 84 ... 2c dc 09 86 01 0d fa fa [164 bytes]
+2026-03-17 17:01:41,694 [DEBUG] websockets.client – > BINARY a7 8a 54 34 f5 85 aa c3 06 29 b6 86 7a 4d 93 81 ... 8d 64 d8 87 01 0d fa fa [165 bytes]
+2026-03-17 17:01:41,695 [DEBUG] websockets.client – > BINARY d7 cd a1 ec f0 e5 77 16 2a 37 de 6d 7a 38 f7 44 ... a3 db 13 88 01 0d fa fa [162 bytes]
+2026-03-17 17:01:41,697 [DEBUG] websockets.client – > BINARY 35 6a 2f 8e fd 6c 7e b4 4b e4 76 c7 28 5a fb 1a ... 9b 6e 06 89 01 0d fa fa [159 bytes]
+2026-03-17 17:01:41,701 [DEBUG] websockets.client – > BINARY ff 81 38 1d 8f 62 ba 6a 15 3b fc 46 76 bd fe f9 ... 17 ec 80 8a 01 0d fa fa [178 bytes]
+2026-03-17 17:01:41,703 [DEBUG] websockets.client – > BINARY 53 a2 fc 9e 8c f6 1b 66 90 93 57 75 3f 90 18 cc ... 8c 0b ad 8b 01 0d fa fa [184 bytes]
+2026-03-17 17:01:41,704 [DEBUG] websockets.client – > BINARY 68 4d 34 60 7b 17 fe 6a 44 df b3 3f ad 41 7f f6 ... 71 3a 35 8c 01 0d fa fa [193 bytes]
+2026-03-17 17:01:41,707 [DEBUG] websockets.client – > BINARY 4b 83 84 36 d5 37 0f 18 eb 50 e5 e5 9d 43 74 72 ... b7 5d 0d 92 01 0d fa fa [168 bytes]
+2026-03-17 17:01:41,708 [DEBUG] websockets.client – > BINARY 55 65 3f ac ed 01 20 27 ac 8d be 79 1e 52 0b 0a ... fb fa 71 93 01 0d fa fa [166 bytes]
+2026-03-17 17:01:41,709 [DEBUG] websockets.client – > BINARY f2 23 b1 04 a7 a0 5e 75 3a a3 97 e6 be 45 a5 3f ... 36 fe e7 94 01 0d fa fa [169 bytes]
+2026-03-17 17:01:41,709 [DEBUG] websockets.client – > BINARY 35 74 08 e0 c0 a9 fb f9 67 17 54 ad 05 5b 18 47 ... 0c f5 24 95 01 0d fa fa [172 bytes]
+2026-03-17 17:01:41,711 [DEBUG] websockets.client – > BINARY 54 9e bf 80 30 91 12 be 3d 65 c6 0c 8d e8 4f 7c ... eb ca 1b 96 01 0d fa fa [184 bytes]
+2026-03-17 17:01:41,712 [DEBUG] websockets.client – > BINARY 03 3c ad a1 60 38 68 bd c6 e4 d2 61 2d e7 cf 77 ... ea 73 95 97 01 0d fa fa [177 bytes]
+2026-03-17 17:01:41,713 [DEBUG] websockets.client – > BINARY 7e ae f5 8e 27 20 da fb 29 ae 73 f3 e4 e6 4f 5f ... 69 23 c8 98 01 0d fa fa [181 bytes]
+2026-03-17 17:01:41,714 [DEBUG] websockets.client – > BINARY 5f c4 e9 06 fa da b4 4c ae 2f 08 96 1b 0d 6b c9 ... df 65 bf 99 01 0d fa fa [166 bytes]
+2026-03-17 17:01:41,715 [DEBUG] websockets.client – > BINARY 54 a1 c8 6c f6 68 64 e8 f7 0c e1 69 e4 1d c9 c5 ... 13 7c 72 9a 01 0d fa fa [144 bytes]
+2026-03-17 17:01:41,715 [DEBUG] websockets.client – > BINARY c3 2a 7e d6 38 b1 f2 4c 54 9d db c6 0c 89 53 f3 ... ac 2e 1c 9b 01 0d fa fa [135 bytes]
+2026-03-17 17:01:41,717 [DEBUG] websockets.client – > BINARY b9 2d a9 ba 23 2f 4e 33 4c 23 7f 18 cd 1f 7c b4 ... 3b 78 25 9c 01 0d fa fa [112 bytes]
+2026-03-17 17:01:41,718 [DEBUG] websockets.client – > BINARY 53 bc 80 18 5a 8b ff 3c 30 19 c4 de f8 01 31 fa ... af 7f 33 9d 01 0d fa fa [105 bytes]
+2026-03-17 17:01:41,719 [DEBUG] websockets.client – > BINARY a9 6e 36 50 cb a2 78 d4 a6 e5 16 58 69 95 81 c7 ... 0d ea 62 9e 01 0d fa fa [113 bytes]
+2026-03-17 17:01:41,722 [DEBUG] websockets.client – > BINARY 0d aa 88 e5 f6 43 62 ce 00 bd bb 70 af d6 8d 85 ... 22 56 ee 9f 01 0d fa fa [102 bytes]
+2026-03-17 17:01:41,723 [DEBUG] websockets.client – > BINARY 03 a5 6f 30 2a 43 31 57 82 dc 25 38 c6 96 4c 78 ... 14 37 86 a0 01 0d fa fa [97 bytes]
+2026-03-17 17:01:41,725 [DEBUG] websockets.client – > BINARY b9 b2 e8 e7 8e c7 aa 55 d4 f5 1d d4 de b2 53 b9 ... 8e c9 37 a1 01 0d fa fa [105 bytes]
+2026-03-17 17:01:41,725 [DEBUG] websockets.client – > BINARY fe eb 57 03 72 84 28 64 b6 bf 29 4f fb 75 c7 7e ... 30 7a 37 a2 01 0d fa fa [132 bytes]
+2026-03-17 17:01:41,727 [DEBUG] websockets.client – > BINARY 41 b0 73 7f 1c db d1 d8 23 01 3b 45 84 cb d1 6e ... f5 a7 ea a3 01 0d fa fa [129 bytes]
+2026-03-17 17:01:41,728 [DEBUG] websockets.client – > BINARY fe 8f 27 ee ec 06 db 3c e2 f8 3c a1 76 56 49 ff ... a0 50 dc a4 01 0d fa fa [172 bytes]
+2026-03-17 17:01:41,729 [DEBUG] websockets.client – > BINARY b2 e2 9a 69 ed c0 33 de b6 c0 d1 4f 34 fb c5 f2 ... d6 94 49 a5 01 0d fa fa [191 bytes]
+2026-03-17 17:01:41,730 [DEBUG] websockets.client – > BINARY d2 31 23 70 22 b2 f3 5e 5f e3 00 e0 2c a8 a8 3b ... 6d 2c 9a a6 01 0d fa fa [186 bytes]
+2026-03-17 17:01:41,731 [DEBUG] websockets.client – > BINARY 1e 0c 26 09 78 89 c6 ab f4 03 ec 41 96 3f 46 7d ... d8 fe 5e a7 01 0d fa fa [193 bytes]
+2026-03-17 17:01:41,732 [DEBUG] websockets.client – > BINARY 59 6e 56 31 79 95 90 a4 da fd 28 66 f5 33 80 f3 ... ef 4e 51 a8 01 0d fa fa [177 bytes]
+2026-03-17 17:01:41,734 [DEBUG] websockets.client – > BINARY 94 44 9a 16 fe d4 7e c0 dd d6 1a 33 fe 01 82 c0 ... 1c ac 9b a9 01 0d fa fa [187 bytes]
+2026-03-17 17:01:41,735 [DEBUG] websockets.client – > BINARY f8 50 f1 e6 e1 ab f3 a4 82 ef 10 51 82 56 05 f2 ... a5 0e 42 aa 01 0d fa fa [184 bytes]
+2026-03-17 17:01:41,736 [DEBUG] websockets.client – > BINARY 82 95 ad c4 d4 83 d8 77 3f 93 8e fc b0 b6 e2 0f ... 21 a4 b7 ab 01 0d fa fa [175 bytes]
+2026-03-17 17:01:41,736 [DEBUG] websockets.client – > BINARY 5c a6 97 d8 c0 14 6c e5 b8 88 31 94 9b 48 1c 66 ... f1 87 5c ac 01 0d fa fa [168 bytes]
+2026-03-17 17:01:41,737 [DEBUG] websockets.client – > BINARY 81 15 87 20 9a 48 8c c2 50 96 03 43 7b cc 99 60 ... 2f 15 4b ad 01 0d fa fa [174 bytes]
+2026-03-17 17:01:41,739 [DEBUG] websockets.client – > BINARY a3 79 42 db ac 73 f0 e7 6f ee 9f 7b c8 9f 1f cc ... 15 03 21 ae 01 0d fa fa [175 bytes]
+2026-03-17 17:01:41,741 [DEBUG] websockets.client – > BINARY 9e 65 61 11 51 2d 10 7b 45 59 a4 f0 75 0f 44 32 ... 94 78 d6 af 01 0d fa fa [166 bytes]
+2026-03-17 17:01:41,742 [DEBUG] websockets.client – > BINARY f5 88 86 86 c3 18 33 96 42 3f 49 53 4e e1 44 93 ... bf 6f 76 b0 01 0d fa fa [157 bytes]
+2026-03-17 17:01:41,742 [DEBUG] websockets.client – > BINARY 66 a1 99 c1 fe 99 96 bf 7a 0d e9 f1 cd 6b ff 37 ... 2b 74 c8 b1 01 0d fa fa [168 bytes]
+2026-03-17 17:01:41,743 [DEBUG] websockets.client – > BINARY 5e 1d d4 bb ad 4c 72 7f 6e 4a 15 96 9b 17 e8 d1 ... 0c 55 f8 b2 01 0d fa fa [179 bytes]
+2026-03-17 17:01:41,744 [DEBUG] websockets.client – > BINARY ac ce a7 ef d4 49 2b 77 41 c3 19 ba a6 aa 85 5e ... ed a1 2a b3 01 0d fa fa [179 bytes]
+2026-03-17 17:01:41,744 [DEBUG] websockets.client – > BINARY 86 04 51 21 f5 30 84 05 1e b0 e9 d2 85 f0 37 f0 ... 02 d1 66 b4 01 0d fa fa [159 bytes]
+2026-03-17 17:01:41,745 [DEBUG] websockets.client – > BINARY 4d 98 5d f3 b1 ef 2a 64 ab bb be 32 99 4b 73 b4 ... 97 6e cb b5 01 0d fa fa [125 bytes]
+2026-03-17 17:01:41,745 [DEBUG] websockets.client – > BINARY a4 1f c3 88 2e 70 7c 60 29 70 b2 c3 14 86 ac e4 ... 8b b9 7f b6 01 0d fa fa [114 bytes]
+2026-03-17 17:01:41,746 [DEBUG] websockets.client – > BINARY 07 c9 a7 33 0c fd 65 49 bf ea db 76 fb 58 a0 73 ... d2 7a 5e b7 01 0d fa fa [100 bytes]
+2026-03-17 17:01:41,747 [DEBUG] websockets.client – > BINARY ae fa b2 9d 56 91 b4 d7 34 f2 43 89 ab 66 e5 c0 ... 8d 3f 9d b8 01 0d fa fa [98 bytes]
+2026-03-17 17:01:41,748 [DEBUG] websockets.client – > BINARY 69 8f c9 a7 ae b3 c2 9f 65 56 23 6a d4 14 38 28 ... 8e 43 5f b9 01 0d fa fa [94 bytes]
+2026-03-17 17:01:41,749 [DEBUG] websockets.client – > BINARY 6d c4 59 eb d8 11 88 93 c2 05 a9 1f 0e 8b ef d5 ... ec 55 29 ba 01 0d fa fa [96 bytes]
+2026-03-17 17:01:41,749 [DEBUG] websockets.client – > BINARY 33 e7 63 ed 0e 39 bc 40 02 80 97 66 f1 53 0a bc ... 5a 06 5e bb 01 0d fa fa [100 bytes]
+2026-03-17 17:01:41,751 [DEBUG] websockets.client – > BINARY 8e ad f0 08 12 05 1e 86 af a2 04 95 3d 46 d2 ca ... d5 d1 f7 bc 01 0d fa fa [121 bytes]
+2026-03-17 17:01:41,752 [DEBUG] websockets.client – > BINARY 6a 7f f5 1c 4d d4 cd 67 52 d3 f6 6d e5 63 86 cb ... 15 31 37 bd 01 0d fa fa [133 bytes]
+2026-03-17 17:01:41,753 [DEBUG] websockets.client – > BINARY 32 40 32 e4 21 a0 77 9c 79 85 40 42 7f e6 ff a0 ... 01 bc eb be 01 0d fa fa [164 bytes]
+2026-03-17 17:01:41,754 [DEBUG] websockets.client – > BINARY ed 54 6c ca a8 c9 c1 fa ba 93 35 1e f6 fc 2f f7 ... 6d 6c 80 bf 01 0d fa fa [180 bytes]
+2026-03-17 17:01:41,755 [DEBUG] websockets.client – > BINARY 3f 24 de 4e c6 6b ce 89 43 6f 51 bc 60 5a 2c c4 ... 56 67 ca c0 01 0d fa fa [197 bytes]
+2026-03-17 17:01:41,755 [DEBUG] websockets.client – > BINARY 35 e4 9e 2a 89 44 36 df 2d a1 00 c4 90 1b 65 7e ... 3e 12 65 c1 01 0d fa fa [182 bytes]
+2026-03-17 17:01:41,756 [DEBUG] websockets.client – > BINARY 93 7d 8c d4 1e ed 57 64 f5 5f 39 1a 88 e6 c4 f6 ... 6b 03 54 c2 01 0d fa fa [184 bytes]
+2026-03-17 17:01:41,757 [DEBUG] websockets.client – > BINARY 0d e2 df 87 82 96 85 40 8c bc 93 f7 8b 93 b5 ff ... d9 50 66 c3 01 0d fa fa [175 bytes]
+2026-03-17 17:01:41,758 [DEBUG] websockets.client – > BINARY df c4 9d 1d b2 1e 93 5a 9a c2 b4 4f 36 4d ee 3d ... b4 1b b8 c4 01 0d fa fa [183 bytes]
+2026-03-17 17:01:41,759 [DEBUG] websockets.client – > BINARY 74 c8 ad 99 fa d0 49 af a1 8a 14 21 c6 b8 f7 52 ... 01 98 20 c5 01 0d fa fa [176 bytes]
+2026-03-17 17:01:41,759 [DEBUG] websockets.client – > BINARY 18 01 e6 a6 80 77 fc 98 ba 4a 7a 50 94 1a 8d f3 ... 56 85 2e c6 01 0d fa fa [179 bytes]
+2026-03-17 17:01:41,761 [DEBUG] websockets.client – > BINARY c2 d8 17 74 b8 3c 6b 11 aa 3b 6e fe 15 68 1f 21 ... 46 f5 a3 c7 01 0d fa fa [173 bytes]
+2026-03-17 17:01:41,762 [DEBUG] websockets.client – > BINARY b2 7d 83 41 fe 83 48 48 f3 cd cf 04 26 de 59 73 ... af b3 9a c8 01 0d fa fa [175 bytes]
+2026-03-17 17:01:41,763 [DEBUG] websockets.client – > BINARY f4 27 45 af bc 4a 12 a2 0c 74 3e 7b de bd 8b 56 ... e4 6e 94 c9 01 0d fa fa [174 bytes]
+2026-03-17 17:01:41,764 [DEBUG] websockets.client – > BINARY 8b 92 f0 e9 68 e3 b5 81 64 04 a3 6e c2 97 27 45 ... 1a 62 b0 ca 01 0d fa fa [167 bytes]
+2026-03-17 17:01:41,764 [DEBUG] websockets.client – > BINARY 74 66 1b 73 fb eb 61 bc 57 29 cc ff 4a 3b bb 9c ... e6 a7 87 cb 01 0d fa fa [167 bytes]
+2026-03-17 17:01:41,765 [DEBUG] websockets.client – > BINARY 26 5d 31 77 bb af c3 cf d6 69 24 ba 46 5a 0d f6 ... f5 9b 1e cc 01 0d fa fa [169 bytes]
+2026-03-17 17:01:41,766 [DEBUG] websockets.client – > BINARY dc dd f0 dc 6c 67 76 a8 d5 ce 52 68 18 b9 38 da ... 3d 99 fc cd 01 0d fa fa [181 bytes]
+2026-03-17 17:01:41,767 [DEBUG] websockets.client – > BINARY 31 b2 89 29 61 27 a8 4b 75 b4 3d 0c b1 fc 26 bd ... 53 e1 25 ce 01 0d fa fa [174 bytes]
+2026-03-17 17:01:41,768 [DEBUG] websockets.client – > BINARY 84 a6 0f b8 5c 80 25 47 ad 2a 37 51 44 bf fb db ... 4f a6 07 cf 01 0d fa fa [173 bytes]
+2026-03-17 17:01:41,769 [DEBUG] websockets.client – > BINARY 4f b8 6d 16 0a 4b 3d a1 65 aa ec ff a2 93 0f 88 ... 5e bf f4 d0 01 0d fa fa [151 bytes]
+2026-03-17 17:01:41,769 [DEBUG] websockets.client – > BINARY 8b ae cd bd 15 9e 11 10 00 0a 04 97 ff 53 89 c1 ... a8 ac 12 d1 01 0d fa fa [129 bytes]
+2026-03-17 17:01:41,771 [DEBUG] websockets.client – > BINARY ce 6b e1 4d c5 63 de 80 34 a7 63 35 71 e5 0c e6 ... f6 2b 3d d2 01 0d fa fa [114 bytes]
+2026-03-17 17:01:41,772 [DEBUG] websockets.client – > BINARY 2d 84 dc b3 e3 07 23 5d 22 a8 91 c6 3e a3 58 1b ... 93 77 f5 d3 01 0d fa fa [108 bytes]
+2026-03-17 17:01:41,773 [DEBUG] websockets.client – > BINARY 69 6b 34 a9 06 e7 db b0 d2 9d 16 57 73 95 e6 3f ... 0d 15 ab d4 01 0d fa fa [97 bytes]
+2026-03-17 17:01:41,774 [DEBUG] websockets.client – > BINARY 48 bd 08 5a e4 0d 1a 92 d9 9a 33 6f 85 ba 75 17 ... f0 43 cf d5 01 0d fa fa [96 bytes]
+2026-03-17 17:01:41,774 [DEBUG] websockets.client – > BINARY ac 3d 02 5a 0f 84 85 0d d6 92 37 ff 8d 37 08 8b ... f0 00 51 d6 01 0d fa fa [97 bytes]
+2026-03-17 17:01:41,775 [DEBUG] websockets.client – > BINARY bc 39 a9 f5 51 55 73 e9 16 1e 53 fc 58 c4 79 38 ... 60 68 21 d7 01 0d fa fa [99 bytes]
+2026-03-17 17:01:41,776 [DEBUG] websockets.client – > BINARY d2 3d 48 e1 17 5b 6a 12 54 10 4d 5d e3 a5 e6 8e ... a0 55 73 d8 01 0d fa fa [102 bytes]
+2026-03-17 17:01:41,777 [DEBUG] websockets.client – > BINARY aa 2c a4 07 ef 13 cd 16 90 35 d8 d6 3c 75 6c 50 ... 98 b1 0d d9 01 0d fa fa [105 bytes]
+2026-03-17 17:01:41,778 [DEBUG] websockets.client – > BINARY f5 12 87 91 ea d7 38 3c fe a4 af 41 63 cc 7e 4a ... 0d 92 76 da 01 0d fa fa [94 bytes]
+2026-03-17 17:01:41,778 [DEBUG] websockets.client – > BINARY 84 c6 c5 0c 05 62 0c 2c c0 e5 5d 91 ba 19 d8 86 ... 12 44 37 db 01 0d fa fa [88 bytes]
+2026-03-17 17:01:41,779 [DEBUG] websockets.client – > BINARY 56 ec 1e dc dd de 94 81 a2 36 c6 58 93 c6 d2 02 ... e1 e7 88 dc 01 0d fa fa [92 bytes]
+2026-03-17 17:01:41,781 [DEBUG] websockets.client – > BINARY fb b4 be f0 c3 e7 10 e9 c5 ab 64 94 bb 24 f4 5f ... 08 b1 77 dd 01 0d fa fa [93 bytes]
+2026-03-17 17:01:41,782 [DEBUG] websockets.client – > BINARY 0c f8 7e 67 3a 8b af 99 25 c1 28 5b 98 7f fc 9f ... 95 e7 9e de 01 0d fa fa [91 bytes]
+2026-03-17 17:01:41,782 [DEBUG] websockets.client – > BINARY 64 d0 53 f5 3f b5 b0 39 ab 19 3a 3d d1 32 49 36 ... 4c 4a d2 df 01 0d fa fa [92 bytes]
+2026-03-17 17:01:41,783 [DEBUG] websockets.client – > BINARY 41 7d 04 8d 52 b7 db c2 9d d5 40 0e 6f eb 58 50 ... 4b e4 5d e0 01 0d fa fa [92 bytes]
+2026-03-17 17:01:41,784 [DEBUG] websockets.client – > BINARY 44 b8 e7 8a 00 26 bb 16 6b ee fb fb cf 63 94 5f ... ba 71 a0 e1 01 0d fa fa [88 bytes]
+2026-03-17 17:01:41,785 [DEBUG] websockets.client – > BINARY 19 e6 9a 82 1b 7e f6 94 61 72 3c 81 b1 76 78 55 ... 6b 55 d8 e2 01 0d fa fa [123 bytes]
+2026-03-17 17:01:41,869 [DEBUG] websockets.client – > BINARY 1b f6 28 82 e6 78 3e 80 7c f1 04 45 4a 16 3e f6 ... 2f ed 92 e3 01 0d fa fa [115 bytes]
+2026-03-17 17:01:42,098 [DEBUG] websockets.client – < TEXT '{"type":"SpeechStarted","channel":[0,1],"timestamp":0.13}' [57 bytes]
+2026-03-17 17:01:42,227 [DEBUG] websockets.client – > BINARY 46 92 fc 16 29 8b d2 3a 64 e4 01 0d fa fa [14 bytes]
+2026-03-17 17:01:42,228 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:42,382 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [409 bytes]
+2026-03-17 17:01:42,637 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:42,638 [DEBUG] websockets.client – > BINARY 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 ... 32 32 32 32 32 32 32 32 [50 bytes]
+2026-03-17 17:01:42,639 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:42,641 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:43,049 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:43,254 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [409 bytes]
+2026-03-17 17:01:43,463 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:43,463 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:43,465 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:44,557 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:44,558 [DEBUG] websockets.client – > BINARY 54 b7 a5 a3 fe c8 ee 67 68 3f 41 72 03 92 3d af ... b7 e0 c7 fa 01 0d fa fa [183 bytes]
+2026-03-17 17:01:44,558 [DEBUG] websockets.client – > BINARY c4 c1 9c 53 e9 53 95 06 2f 98 71 3a e8 9e 08 c6 ... 16 16 16 16 16 16 16 16 [183 bytes]
+2026-03-17 17:01:44,562 [DEBUG] websockets.client – > BINARY 0c 02 4b d0 5f 0c 53 1f 60 b2 94 a4 01 cd 0f 18 ... 04 bd 0c fc 01 0d fa fa [181 bytes]
+2026-03-17 17:01:44,563 [DEBUG] websockets.client – > BINARY 3d b1 9f 23 18 08 87 fa 6e 90 45 15 58 68 58 54 ... c0 8f 45 fd 01 0d fa fa [178 bytes]
+2026-03-17 17:01:44,614 [DEBUG] websockets.client – > BINARY d1 b6 fa 07 a6 24 3f 3f 2a cd fc dc bf 2f 85 00 ... 3d d7 e6 fe 01 0d fa fa [181 bytes]
+2026-03-17 17:01:44,621 [DEBUG] websockets.client – > BINARY 7f bf cc 5b 88 42 fa 34 a0 e7 91 2c 88 71 1e f3 ... b4 f6 b4 ff 01 0d fa fa [172 bytes]
+2026-03-17 17:01:44,649 [DEBUG] websockets.client – > BINARY d2 20 b3 ce 35 a0 0d 57 9e 4e 24 5c fc 54 e4 3a ... 52 99 03 80 02 0d fa fa [171 bytes]
+2026-03-17 17:01:44,658 [DEBUG] websockets.client – > BINARY 73 ce 36 23 63 38 18 8e 93 1f 1d a1 c5 57 96 94 ... 9a 54 0d 81 02 0d fa fa [170 bytes]
+2026-03-17 17:01:44,688 [DEBUG] websockets.client – > BINARY 6f 86 1a d6 e3 4e 1d cf b4 20 21 10 20 e6 9a 31 ... c8 cb 86 82 02 0d fa fa [165 bytes]
+2026-03-17 17:01:44,700 [DEBUG] websockets.client – > BINARY cd 3b 0a cc 12 e4 32 38 ac 8a af 87 0d 77 89 14 ... 14 1b f1 83 02 0d fa fa [165 bytes]
+2026-03-17 17:01:44,718 [DEBUG] websockets.client – > BINARY 99 29 e7 e6 23 99 5e 67 c5 92 ea ab 75 cb 59 a4 ... 2d 79 f1 84 02 0d fa fa [187 bytes]
+2026-03-17 17:01:44,742 [DEBUG] websockets.client – > BINARY 17 d8 11 31 8d 2a 36 15 59 bd 36 8e d9 41 27 3e ... 4b d7 41 85 02 0d fa fa [190 bytes]
+2026-03-17 17:01:44,756 [DEBUG] websockets.client – > BINARY de dc 7d 23 f5 65 2f 7d 61 40 65 60 04 40 a2 4c ... 80 22 3b 86 02 0d fa fa [176 bytes]
+2026-03-17 17:01:44,778 [DEBUG] websockets.client – > BINARY ed d5 0b db 85 6c c9 91 1a 04 8b b5 d5 8d b7 6c ... 20 87 5a 87 02 0d fa fa [182 bytes]
+2026-03-17 17:01:44,822 [DEBUG] websockets.client – > BINARY 68 26 14 d7 68 68 32 60 61 a0 65 56 d3 40 4f 99 ... 60 d9 c2 88 02 0d fa fa [180 bytes]
+2026-03-17 17:01:44,836 [DEBUG] websockets.client – > BINARY 50 f4 62 44 d2 c1 60 36 43 0c f7 bc 23 95 b2 27 ... 12 99 e4 89 02 0d fa fa [156 bytes]
+2026-03-17 17:01:44,841 [DEBUG] websockets.client – > BINARY 5e a0 ec 21 26 90 4a a8 a0 84 90 ad b3 d8 fb 8f ... 97 58 15 8a 02 0d fa fa [166 bytes]
+2026-03-17 17:01:44,861 [DEBUG] websockets.client – > BINARY 20 40 20 a3 81 37 79 1f d1 c4 a6 c6 3e 5c 95 e7 ... 37 5c 03 8b 02 0d fa fa [158 bytes]
+2026-03-17 17:01:44,873 [DEBUG] websockets.client – > BINARY d5 73 a9 65 ab 21 f2 8a 40 97 51 1e d1 ee 16 44 ... 7e fb 65 8c 02 0d fa fa [175 bytes]
+2026-03-17 17:01:44,913 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [402 bytes]
+2026-03-17 17:01:44,971 [DEBUG] websockets.client – > BINARY cd 21 af 00 24 07 27 11 d4 dc d6 46 a0 76 ef 5d ... 2e 9a ad 8d 02 0d fa fa [171 bytes]
+2026-03-17 17:01:44,991 [DEBUG] websockets.client – > BINARY ea 30 bc 41 73 a7 9e 78 0b e0 2b 8f 74 a1 3d 45 ... 21 e6 85 8e 02 0d fa fa [191 bytes]
+2026-03-17 17:01:45,006 [DEBUG] websockets.client – < TEXT '{"type":"SpeechStarted","channel":[0,1],"timestamp":2.73}' [57 bytes]
+2026-03-17 17:01:45,008 [DEBUG] websockets.client – > BINARY 18 e2 32 2a e9 68 4b a1 28 7a cc 41 06 20 68 7b ... 9f 67 d4 8f 02 0d fa fa [185 bytes]
+2026-03-17 17:01:45,023 [DEBUG] websockets.client – > BINARY 25 d3 58 7c 0e ea 27 6b 38 73 08 bc ea a5 92 12 ... 3c 0d 70 90 02 0d fa fa [191 bytes]
+2026-03-17 17:01:45,025 [DEBUG] websockets.client – > BINARY 75 29 fb 6a 79 75 2a 5d dd b5 9d 5b aa 7d a1 dd ... 1b 1b 58 91 02 0d fa fa [186 bytes]
+2026-03-17 17:01:45,032 [DEBUG] websockets.client – > BINARY 35 1a f5 39 f1 1b b0 a8 d5 3c 30 9a 7c 1b 6e ca ... d2 eb 32 92 02 0d fa fa [186 bytes]
+2026-03-17 17:01:45,048 [DEBUG] websockets.client – > BINARY c1 9c 41 ed d3 6b 4f 85 6d a9 c4 56 27 c1 4c 56 ... 50 e9 71 93 02 0d fa fa [179 bytes]
+2026-03-17 17:01:45,049 [DEBUG] websockets.client – > BINARY 1c 18 16 cb b9 bc 73 e3 6e b9 28 78 05 83 2b f1 ... 02 0d fa fa 04 04 04 04 [183 bytes]
+2026-03-17 17:01:45,053 [DEBUG] websockets.client – > BINARY 9e 08 5b 9a 4f 82 cd 95 94 a0 90 87 b0 ae b6 da ... 12 cf b7 95 02 0d fa fa [183 bytes]
+2026-03-17 17:01:45,078 [DEBUG] websockets.client – > BINARY 5c bd f0 e7 30 10 f3 9f c5 ab 8f b3 d3 4e 83 a4 ... 9c 1a 59 96 02 0d fa fa [180 bytes]
+2026-03-17 17:01:45,093 [DEBUG] websockets.client – > BINARY b1 0d 73 ba 78 66 e5 04 f0 5d 22 36 b0 01 08 c6 ... 24 64 0d 97 02 0d fa fa [178 bytes]
+2026-03-17 17:01:45,112 [DEBUG] websockets.client – > BINARY 8f cd 7b 51 10 71 bd 7a 1c a9 22 90 59 ce 6e 85 ... e4 a8 ed 98 02 0d fa fa [180 bytes]
+2026-03-17 17:01:45,132 [DEBUG] websockets.client – > BINARY 07 99 b3 40 fd d0 f1 86 06 6b 46 ab e1 5d ec f9 ... 39 e0 1d 99 02 0d fa fa [179 bytes]
+2026-03-17 17:01:45,146 [DEBUG] websockets.client – > BINARY eb 8d 4b 12 fd 9a 92 22 22 dc 5f 1a e3 1c 21 94 ... a1 a4 22 9a 02 0d fa fa [179 bytes]
+2026-03-17 17:01:45,188 [DEBUG] websockets.client – > BINARY fd 06 09 fb 34 30 5f 33 b8 08 3f 7a d9 d7 bb cf ... 28 45 1e 9b 02 0d fa fa [175 bytes]
+2026-03-17 17:01:45,189 [DEBUG] websockets.client – > BINARY fc c9 3f 3f 08 fc b7 79 76 1f 7c 9e 7f ba 07 c5 ... 3c a8 3b 9c 02 0d fa fa [183 bytes]
+2026-03-17 17:01:45,203 [DEBUG] websockets.client – > BINARY 4c c3 fb 81 0d 06 bb af b4 b3 21 f6 d3 b7 25 01 ... 39 08 77 9d 02 0d fa fa [183 bytes]
+2026-03-17 17:01:45,226 [DEBUG] websockets.client – > BINARY 97 73 d4 7f bb a2 1b ee 1d aa 9f 86 74 46 33 f6 ... 9a d2 d7 9e 02 0d fa fa [170 bytes]
+2026-03-17 17:01:45,248 [DEBUG] websockets.client – > BINARY cf 04 eb 76 12 78 2a ec be 47 bf 5c 5f 08 2d 39 ... ca d3 52 9f 02 0d fa fa [173 bytes]
+2026-03-17 17:01:45,272 [DEBUG] websockets.client – > BINARY 19 e7 53 d9 09 87 bb 6b 7c 77 0f 85 8a 2b ee 03 ... ec 25 8f a0 02 0d fa fa [174 bytes]
+2026-03-17 17:01:45,292 [DEBUG] websockets.client – > BINARY 96 6c f5 6f be ca 33 84 cd cd 64 ee 8e 87 12 f0 ... ab 02 e0 a1 02 0d fa fa [174 bytes]
+2026-03-17 17:01:45,308 [DEBUG] websockets.client – > BINARY 29 a0 90 b9 a0 d6 be 64 7c 42 da 10 08 ba 66 b9 ... 80 7b f5 a2 02 0d fa fa [143 bytes]
+2026-03-17 17:01:45,330 [DEBUG] websockets.client – > BINARY 34 c8 e3 5a 82 4e f3 24 a3 92 07 a6 f7 f2 ef 57 ... 14 2b c6 a3 02 0d fa fa [116 bytes]
+2026-03-17 17:01:45,351 [DEBUG] websockets.client – > BINARY 30 fd 1f f3 1e d3 ec c7 a7 58 96 38 c2 ff 3c ef ... f8 42 ce a4 02 0d fa fa [106 bytes]
+2026-03-17 17:01:45,366 [DEBUG] websockets.client – > BINARY 2b 1f e5 3e 2e 44 52 87 dd bc 62 78 9c 92 10 ec ... 3d 67 ca a5 02 0d fa fa [98 bytes]
+2026-03-17 17:01:45,393 [DEBUG] websockets.client – > BINARY 7c b1 8e 36 29 c9 0f 9b 0f 76 d6 56 17 d9 82 cd ... 0a 9b fa a6 02 0d fa fa [93 bytes]
+2026-03-17 17:01:45,414 [DEBUG] websockets.client – > BINARY d9 da 9a d2 d3 e1 b7 01 70 b7 b7 16 cd f0 87 70 ... 7f 12 aa a7 02 0d fa fa [95 bytes]
+2026-03-17 17:01:45,461 [DEBUG] websockets.client – > BINARY 7a 6a ca 28 af a7 39 85 b0 df 67 7d 9d 02 df d1 ... 79 d4 70 a8 02 0d fa fa [101 bytes]
+2026-03-17 17:01:45,486 [DEBUG] websockets.client – > BINARY 8f 13 7b df 59 82 34 84 8e 7b d3 92 27 f6 d3 5e ... 5b 13 f6 a9 02 0d fa fa [91 bytes]
+2026-03-17 17:01:45,500 [DEBUG] websockets.client – > BINARY 44 78 d6 e2 7d 1f 69 0e 95 e7 7d b3 80 03 83 d1 ... bf 17 9a aa 02 0d fa fa [94 bytes]
+2026-03-17 17:01:45,523 [DEBUG] websockets.client – > BINARY 2c e8 16 8b 44 0f 9d 2b 36 36 62 30 d2 fd 49 5b ... 0c 21 70 ab 02 0d fa fa [88 bytes]
+2026-03-17 17:01:45,524 [DEBUG] websockets.client – > BINARY 04 5a 01 77 10 8d 87 49 3f d3 4f 1f 3b 63 aa a4 ... 73 b7 c3 ac 02 0d fa fa [88 bytes]
+2026-03-17 17:01:45,532 [DEBUG] websockets.client – > BINARY 58 e2 79 96 5f 12 fc f1 3d da cc 57 a4 0f 64 f9 ... 55 1f f5 ad 02 0d fa fa [102 bytes]
+2026-03-17 17:01:45,562 [DEBUG] websockets.client – > BINARY e4 d4 22 f6 98 d1 9f 01 d8 c5 53 f0 31 2b 2c 4c ... 7f df 7d ae 02 0d fa fa [92 bytes]
+2026-03-17 17:01:45,583 [DEBUG] websockets.client – > BINARY ca fd 24 f4 bc 63 43 55 bc 8c 3c 12 93 ac 42 40 ... a4 75 a2 af 02 0d fa fa [93 bytes]
+2026-03-17 17:01:45,601 [DEBUG] websockets.client – > BINARY 2c 58 54 1a c9 57 59 90 21 00 bc 89 53 b0 4c ca ... 39 2c 94 b0 02 0d fa fa [88 bytes]
+2026-03-17 17:01:45,626 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [410 bytes]
+2026-03-17 17:01:45,640 [DEBUG] websockets.client – > BINARY 28 53 35 3c ab 67 4a d3 38 5b 79 81 9a e3 f7 82 ... ea fe ed b1 02 0d fa fa [88 bytes]
+2026-03-17 17:01:45,652 [DEBUG] websockets.client – > BINARY 3d 35 e1 2f 9a 85 24 84 6a f1 e1 a4 be 22 07 0a ... dd 7c a0 b2 02 0d fa fa [88 bytes]
+2026-03-17 17:01:45,653 [DEBUG] websockets.client – > BINARY b4 30 8c 21 a7 a1 51 ff 97 a7 da cb 77 87 30 1b ... f4 5a 9c b3 02 0d fa fa [88 bytes]
+2026-03-17 17:01:45,670 [DEBUG] websockets.client – > BINARY 30 86 2f 5b 24 ce 2a 36 24 0f 70 8f dc fc 51 9a ... 4b 24 41 b4 02 0d fa fa [88 bytes]
+2026-03-17 17:01:45,688 [DEBUG] websockets.client – > BINARY 35 bf 40 7d 07 bf a6 ab e3 4a 9f 50 63 69 5e e1 ... 76 9f ea b5 02 0d fa fa [88 bytes]
+2026-03-17 17:01:45,707 [DEBUG] websockets.client – > BINARY 0e 16 28 08 19 77 cf 55 0e e9 6d 6a 23 4e ae b6 ... bd dd f9 b6 02 0d fa fa [88 bytes]
+2026-03-17 17:01:45,725 [DEBUG] websockets.client – > BINARY fd 7c a1 b2 09 e4 b5 8f db e0 de 60 8c f8 99 4f ... ae 1d 85 b7 02 0d fa fa [88 bytes]
+2026-03-17 17:01:45,755 [DEBUG] websockets.client – > BINARY 76 e7 33 82 c7 8a 6f c9 1e be 84 5c 52 b7 40 8c ... e7 80 27 b8 02 0d fa fa [88 bytes]
+2026-03-17 17:01:46,151 [DEBUG] websockets.client – > BINARY cb 3c b2 d7 89 cc 05 6f 08 b9 02 0d fa fa [14 bytes]
+2026-03-17 17:01:46,167 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:46,596 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [410 bytes]
+2026-03-17 17:01:46,637 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:46,638 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:47,005 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:47,019 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:47,052 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:47,065 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:47,085 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:47,111 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:48,139 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:48,155 [DEBUG] websockets.client – > BINARY 62 fa 9d 92 88 df 7d 18 47 df c0 99 6a 3a 0c 14 ... d4 7e 3a da 02 0d fa fa [168 bytes]
+2026-03-17 17:01:48,179 [DEBUG] websockets.client – > BINARY 04 d3 b0 46 5a 1e 00 4c 33 5b d3 c1 0f 40 e7 bb ... 27 22 b1 db 02 0d fa fa [172 bytes]
+2026-03-17 17:01:48,187 [DEBUG] websockets.client – > BINARY 66 36 5a a0 ff f1 b6 d5 e8 43 3b e0 50 44 32 f9 ... 9a 64 16 dc 02 0d fa fa [161 bytes]
+2026-03-17 17:01:48,256 [DEBUG] websockets.client – > BINARY 86 44 28 00 f0 00 2f b8 bc 57 fc 3a 47 8a 25 6d ... 20 a9 00 dd 02 0d fa fa [171 bytes]
+2026-03-17 17:01:48,341 [DEBUG] websockets.client – > BINARY 6e 9f 9d 57 33 e6 33 f7 f3 ac 8a 81 b6 30 3b 13 ... a5 ff 6e de 02 0d fa fa [178 bytes]
+2026-03-17 17:01:48,354 [DEBUG] websockets.client – > BINARY 74 66 e0 3d 03 0e 47 10 6a 75 a9 41 c6 1b f3 71 ... bf 40 e2 df 02 0d fa fa [177 bytes]
+2026-03-17 17:01:48,355 [DEBUG] websockets.client – > BINARY 38 bc 07 e5 8e 58 d6 30 94 55 0e 4a 21 dc cc 81 ... 29 aa e4 e0 02 0d fa fa [195 bytes]
+2026-03-17 17:01:48,356 [DEBUG] websockets.client – > BINARY 04 0b 2e 0b 18 95 c9 75 eb 69 27 fa 9a c3 59 c3 ... 04 bb ec e1 02 0d fa fa [189 bytes]
+2026-03-17 17:01:48,357 [DEBUG] websockets.client – > BINARY e2 24 f6 cc 9d 6c a6 6b 9f 83 57 19 6d d6 53 df ... fe 68 ef e2 02 0d fa fa [191 bytes]
+2026-03-17 17:01:48,361 [DEBUG] websockets.client – > BINARY b7 b9 b6 db 9a e0 ca fb 9b ed bf 35 86 c3 15 af ... 35 cf 19 e3 02 0d fa fa [179 bytes]
+2026-03-17 17:01:48,361 [DEBUG] websockets.client – > BINARY 72 12 76 34 f3 28 f6 9a 1e 4c 94 34 d6 98 a6 8f ... 06 37 f5 e4 02 0d fa fa [194 bytes]
+2026-03-17 17:01:48,362 [DEBUG] websockets.client – > BINARY d7 9f d4 b1 44 85 7a 3c 24 d8 43 bc 66 20 24 0a ... a8 ec d9 e5 02 0d fa fa [191 bytes]
+2026-03-17 17:01:48,389 [DEBUG] websockets.client – > BINARY 2e 39 a8 2a 56 ec 60 aa 65 83 c2 12 7c e7 1a 0c ... 10 4d ea e6 02 0d fa fa [187 bytes]
+2026-03-17 17:01:48,411 [DEBUG] websockets.client – > BINARY a4 fd 20 5b 03 4e a0 d1 3b 59 57 dd 47 71 69 c2 ... 3f 78 21 e7 02 0d fa fa [184 bytes]
+2026-03-17 17:01:48,430 [DEBUG] websockets.client – > BINARY 5a dc c1 e7 e3 8a 3c d2 ff 5a 1d 37 9d cb ea 19 ... 14 73 9a e8 02 0d fa fa [183 bytes]
+2026-03-17 17:01:48,461 [DEBUG] websockets.client – > BINARY c1 98 47 59 0d de 37 4f a9 d3 3f 22 64 b5 72 c0 ... b5 0d 1a e9 02 0d fa fa [182 bytes]
+2026-03-17 17:01:48,473 [DEBUG] websockets.client – > BINARY 18 96 da d8 5d 24 dd ad f7 4e d6 30 f7 d6 d6 40 ... 46 0c 41 ea 02 0d fa fa [178 bytes]
+2026-03-17 17:01:48,493 [DEBUG] websockets.client – > BINARY 94 b6 16 a0 8f 9b 9a 86 14 7f c5 86 f5 b7 82 c5 ... 5a 07 f7 eb 02 0d fa fa [176 bytes]
+2026-03-17 17:01:48,601 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [402 bytes]
+2026-03-17 17:01:48,603 [DEBUG] websockets.client – > BINARY 53 d6 63 ed ba e5 f3 44 93 28 a7 2b ca a8 bc f6 ... 95 61 82 ec 02 0d fa fa [185 bytes]
+2026-03-17 17:01:48,605 [DEBUG] websockets.client – > BINARY 3c 1f 7f 3d 28 8a 6a bd a1 1c 92 d4 b2 7c 68 e0 ... 57 45 1b ed 02 0d fa fa [187 bytes]
+2026-03-17 17:01:48,608 [DEBUG] websockets.client – > BINARY f0 76 69 1e 8c d9 53 c4 ca 6a b8 ce 27 87 c0 ee ... da 85 e4 ee 02 0d fa fa [198 bytes]
+2026-03-17 17:01:48,615 [DEBUG] websockets.client – > BINARY f4 c5 e8 71 60 43 e5 ec e5 c2 d2 eb 82 d0 c2 fe ... 91 b3 7a ef 02 0d fa fa [195 bytes]
+2026-03-17 17:01:48,619 [DEBUG] websockets.client – > BINARY ee 8a 68 9e 86 d0 c5 9b 95 73 e6 1b 4e d6 2a a7 ... 40 32 5d f0 02 0d fa fa [184 bytes]
+2026-03-17 17:01:48,620 [DEBUG] websockets.client – > BINARY 6b 9e fe ab 1a 05 b4 f7 25 3c 4e 21 f8 a2 c3 59 ... d2 ee c5 f1 02 0d fa fa [190 bytes]
+2026-03-17 17:01:48,635 [DEBUG] websockets.client – > BINARY ef 89 8d 5f da 44 8f 4b ea 4a 72 b9 9f fe c3 ec ... 14 37 cf f2 02 0d fa fa [186 bytes]
+2026-03-17 17:01:48,663 [DEBUG] websockets.client – > BINARY bd 5c 2a 43 3f 01 01 e7 73 8e 5a c1 50 5c 9e 17 ... 4c 18 d0 f3 02 0d fa fa [162 bytes]
+2026-03-17 17:01:48,672 [DEBUG] websockets.client – > BINARY 0b 57 22 d6 75 c8 89 c5 65 f4 59 e8 e8 49 d7 23 ... 7d 60 84 f4 02 0d fa fa [149 bytes]
+2026-03-17 17:01:48,692 [DEBUG] websockets.client – > BINARY 0f 87 2c 7b e8 18 27 db 21 9f 6d 4d 1f 66 a8 24 ... 88 6f c9 f5 02 0d fa fa [157 bytes]
+2026-03-17 17:01:48,701 [DEBUG] websockets.client – < TEXT '{"type":"SpeechStarted","channel":[0,1],"timestamp":4.94}' [57 bytes]
+2026-03-17 17:01:48,707 [DEBUG] websockets.client – > BINARY 7e 23 5e bc 1c 9c a6 76 0c c8 00 54 b5 54 af 61 ... 7e 36 fa f6 02 0d fa fa [113 bytes]
+2026-03-17 17:01:48,735 [DEBUG] websockets.client – > BINARY 22 a2 be 1d 92 c8 63 9a 3b 4c 27 38 a3 73 57 77 ... 63 37 86 f7 02 0d fa fa [100 bytes]
+2026-03-17 17:01:48,747 [DEBUG] websockets.client – > BINARY cf 9d bc ad c6 2d b9 3b 67 9d de 32 ab cf 8a 98 ... b9 ef 5c f8 02 0d fa fa [142 bytes]
+2026-03-17 17:01:48,773 [DEBUG] websockets.client – > BINARY 45 7d 1e 55 b7 77 3a 4a 8a 13 39 5e 79 0c 84 7a ... bf b9 74 f9 02 0d fa fa [199 bytes]
+2026-03-17 17:01:48,789 [DEBUG] websockets.client – > BINARY 2f 75 11 4e a1 07 18 bd a3 3b 16 c7 b6 6c 99 88 ... 4f 31 84 fa 02 0d fa fa [180 bytes]
+2026-03-17 17:01:48,817 [DEBUG] websockets.client – > BINARY 6d 9b 5d 40 19 10 0f 0c 49 81 94 51 a2 84 53 84 ... c4 3a 96 fb 02 0d fa fa [167 bytes]
+2026-03-17 17:01:48,829 [DEBUG] websockets.client – > BINARY 84 48 0a 87 2b 7e 0e cb 9e b0 41 69 f9 e4 14 09 ... 27 6e 44 fc 02 0d fa fa [184 bytes]
+2026-03-17 17:01:48,855 [DEBUG] websockets.client – > BINARY e3 d1 6b 38 e3 a8 b6 58 35 54 5c be c9 04 83 d9 ... 31 50 fe fd 02 0d fa fa [178 bytes]
+2026-03-17 17:01:48,895 [DEBUG] websockets.client – > BINARY 4c 78 d3 b3 b6 24 d5 f3 12 40 96 78 30 59 c1 1f ... 2f 31 ec fe 02 0d fa fa [193 bytes]
+2026-03-17 17:01:48,965 [DEBUG] websockets.client – > BINARY 6f 37 03 96 9f f0 13 5a d5 d9 a1 c8 e3 d3 0d 57 ... 6b e0 56 ff 02 0d fa fa [181 bytes]
+2026-03-17 17:01:49,029 [DEBUG] websockets.client – > BINARY 4f 68 c2 96 39 c9 50 15 b5 35 13 fe 61 99 9b bb ... cb 92 a0 80 03 0d fa fa [179 bytes]
+2026-03-17 17:01:49,219 [WARNING] discord.ext.voice_recv.opus – 2 packets were lost being flushed in decoder-8493
+ --> (last=13472) [13472, 13473, 13474]
+2026-03-17 17:01:49,224 [DEBUG] websockets.client – > BINARY 4f 68 c2 96 39 c9 50 15 b5 35 13 fe 61 99 9b bb ... cb 92 a0 80 03 0d fa fa [179 bytes]
+2026-03-17 17:01:49,232 [DEBUG] websockets.client – > BINARY a2 01 ab 36 99 30 31 26 73 d3 2a 7c 76 62 b5 7c ... 03 af 93 83 03 0d fa fa [183 bytes]
+2026-03-17 17:01:49,238 [DEBUG] websockets.client – > BINARY 07 f3 66 55 fe 91 b2 49 f6 0b 75 c1 58 9b b8 6d ... fa 07 07 07 07 07 07 07 [175 bytes]
+2026-03-17 17:01:49,253 [DEBUG] websockets.client – > BINARY ba 03 43 6c a1 1c 49 65 0c 27 f5 1a fd 5e 89 60 ... 87 c8 23 88 03 0d fa fa [175 bytes]
+2026-03-17 17:01:49,255 [DEBUG] websockets.client – > BINARY 14 33 10 1e b7 14 34 a1 16 29 a8 78 a2 04 dd 14 ... 7a 21 32 89 03 0d fa fa [174 bytes]
+2026-03-17 17:01:49,256 [DEBUG] websockets.client – > BINARY 3b 32 39 c2 5b 2b 16 c9 fe 51 a7 15 38 88 ec 03 ... 56 51 ed 8a 03 0d fa fa [169 bytes]
+2026-03-17 17:01:49,259 [DEBUG] websockets.client – > BINARY 11 0e f3 3b f3 09 1c 21 b1 3b 09 42 7d d6 38 e0 ... 5e 56 7d 8b 03 0d fa fa [157 bytes]
+2026-03-17 17:01:49,262 [DEBUG] websockets.client – > BINARY 00 b3 df 45 fb 05 19 05 af c7 a5 a9 aa cf 91 0e ... 44 ce e7 8c 03 0d fa fa [172 bytes]
+2026-03-17 17:01:49,263 [DEBUG] websockets.client – > BINARY 42 4b 23 15 b8 cb aa 03 35 a6 0e 53 89 10 52 a3 ... b3 de f5 8d 03 0d fa fa [173 bytes]
+2026-03-17 17:01:49,265 [DEBUG] websockets.client – > BINARY 38 dd 26 f3 04 3f 2b 8f 40 3c ea 61 f5 85 d9 04 ... b3 49 98 8e 03 0d fa fa [166 bytes]
+2026-03-17 17:01:49,268 [DEBUG] websockets.client – > BINARY 14 f6 19 42 e7 55 c5 6a e8 f1 a9 22 31 80 5a 0c ... 69 22 75 8f 03 0d fa fa [176 bytes]
+2026-03-17 17:01:49,271 [DEBUG] websockets.client – > BINARY fb be af 96 1e 86 cd a7 db 8d 4b 57 db f6 c5 4b ... 87 4e 35 90 03 0d fa fa [158 bytes]
+2026-03-17 17:01:49,274 [DEBUG] websockets.client – > BINARY 70 ae f2 9a e3 ac ac 8c 55 09 f7 ef 28 95 b5 1a ... d3 62 10 91 03 0d fa fa [137 bytes]
+2026-03-17 17:01:49,295 [DEBUG] websockets.client – > BINARY bb 86 07 59 15 3f a1 96 87 47 42 e5 70 07 59 5a ... a2 08 de 92 03 0d fa fa [120 bytes]
+2026-03-17 17:01:49,306 [DEBUG] websockets.client – > BINARY 22 16 f5 39 83 a8 7e 48 e5 38 5d 74 a8 6e 59 0d ... 23 e7 7f 93 03 0d fa fa [109 bytes]
+2026-03-17 17:01:49,328 [DEBUG] websockets.client – > BINARY 29 e9 03 45 78 68 d1 17 a0 fa 73 5a 62 6e 1d c2 ... 83 43 a3 94 03 0d fa fa [95 bytes]
+2026-03-17 17:01:49,352 [DEBUG] websockets.client – > BINARY 39 3f 5d e9 19 45 2a b4 fe aa 9a de fc 07 9c 22 ... 09 da 06 95 03 0d fa fa [97 bytes]
+2026-03-17 17:01:49,363 [DEBUG] websockets.client – > BINARY 4a 68 d1 75 7c c5 b3 e8 56 7e 0d 2d 5d 7c 91 dd ... bb 66 22 96 03 0d fa fa [92 bytes]
+2026-03-17 17:01:49,389 [DEBUG] websockets.client – > BINARY 84 3c f4 21 47 ef c0 71 1b 46 51 8c 22 10 c6 41 ... 32 57 b0 97 03 0d fa fa [94 bytes]
+2026-03-17 17:01:49,413 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:49,433 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:49,439 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:49,680 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [410 bytes]
+2026-03-17 17:01:49,970 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:49,988 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:50,055 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:50,229 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:50,230 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:50,230 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:50,231 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:50,602 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [403 bytes]
+2026-03-17 17:01:52,045 [DEBUG] websockets.client – > BINARY 90 a9 b2 df b4 44 b6 bb 6c 79 da 64 70 37 81 65 ... 41 02 da b4 03 0d fa fa [179 bytes]
+2026-03-17 17:01:52,070 [DEBUG] websockets.client – > BINARY 0a f0 08 4d e4 02 30 df e0 2e 56 22 46 04 10 03 ... 53 e3 38 b5 03 0d fa fa [159 bytes]
+2026-03-17 17:01:52,090 [DEBUG] websockets.client – > BINARY 1e 3b 4a 3a 54 ea 01 42 70 36 41 be 83 e3 00 07 ... 25 33 a8 b6 03 0d fa fa [164 bytes]
+2026-03-17 17:01:52,115 [DEBUG] websockets.client – > BINARY 84 ff 30 f2 d2 1c 68 ee 64 e6 6f 2d 71 35 98 fd ... 41 a2 fc b7 03 0d fa fa [169 bytes]
+2026-03-17 17:01:52,133 [DEBUG] websockets.client – > BINARY 4d f3 8c 20 73 9c b6 e1 e1 ac d5 48 f8 7a d9 28 ... eb 5a 8c b8 03 0d fa fa [175 bytes]
+2026-03-17 17:01:52,149 [DEBUG] websockets.client – > BINARY 79 fd 46 94 50 3f b7 07 a9 87 ad 2d 00 86 19 93 ... dc 49 a2 b9 03 0d fa fa [145 bytes]
+2026-03-17 17:01:52,167 [DEBUG] websockets.client – > BINARY 0f 06 49 39 dc b5 04 c7 d3 d4 b5 56 72 a8 80 ca ... 02 3e d7 ba 03 0d fa fa [163 bytes]
+2026-03-17 17:01:52,181 [DEBUG] websockets.client – > BINARY 64 f8 f3 31 a7 07 e2 7b 55 81 97 82 7b eb 4b b1 ... d1 fe 58 bb 03 0d fa fa [127 bytes]
+2026-03-17 17:01:52,203 [DEBUG] websockets.client – > BINARY 23 42 8f 84 0f 5e 72 bb 93 c7 50 4e 87 2e 88 ed ... 56 06 68 bc 03 0d fa fa [110 bytes]
+2026-03-17 17:01:52,221 [DEBUG] websockets.client – > BINARY e9 4e aa f4 27 2e 62 43 2f c2 ac bb 1e 57 49 07 ... 86 ad 3d bd 03 0d fa fa [97 bytes]
+2026-03-17 17:01:52,246 [DEBUG] websockets.client – > BINARY 4f 99 cc 5d 7d 97 ba 41 2c 8c 13 c4 2a bc 77 0e ... d4 f2 ef be 03 0d fa fa [92 bytes]
+2026-03-17 17:01:52,257 [DEBUG] websockets.client – > BINARY ef d8 0b 2a 1e 67 0b 7c 7f 47 25 2c 2d 1b 0d e3 ... 71 4a df bf 03 0d fa fa [97 bytes]
+2026-03-17 17:01:52,275 [DEBUG] websockets.client – > BINARY ba 23 b2 49 4e 3e 10 7b 4c 80 83 7f 7b 54 69 ff ... c3 00 31 c0 03 0d fa fa [94 bytes]
+2026-03-17 17:01:52,285 [DEBUG] websockets.client – > BINARY 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 ... 32 32 32 32 32 32 32 32 [50 bytes]
+2026-03-17 17:01:52,296 [DEBUG] websockets.client – > BINARY 34 90 3e d3 29 ca 1a f7 f7 f3 b1 cb 26 57 c6 6c ... fe 44 ce c1 03 0d fa fa [91 bytes]
+2026-03-17 17:01:52,309 [DEBUG] websockets.client – > BINARY 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 ... 32 32 32 32 32 32 32 32 [50 bytes]
+2026-03-17 17:01:52,315 [DEBUG] websockets.client – > BINARY 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 ... 32 32 32 32 32 32 32 32 [50 bytes]
+2026-03-17 17:01:52,321 [DEBUG] websockets.client – > BINARY 13 e5 71 70 d2 36 2e 88 c0 55 30 86 6d 8c 96 4a ... fc 3d dd c2 03 0d fa fa [89 bytes]
+2026-03-17 17:01:52,338 [DEBUG] websockets.client – > BINARY 23 17 75 2f a8 4e f3 a7 ac 72 81 82 f7 4f 69 37 ... 90 3d 29 c3 03 0d fa fa [105 bytes]
+2026-03-17 17:01:52,366 [DEBUG] websockets.client – > BINARY c4 32 04 8f 8e f2 22 6e 33 e0 57 66 f7 c8 fa 24 ... 64 07 3e c4 03 0d fa fa [99 bytes]
+2026-03-17 17:01:52,392 [DEBUG] websockets.client – > BINARY d2 71 c2 98 17 e6 4c 4b 62 5a 2f e8 78 d0 c5 77 ... 27 fc 4c c5 03 0d fa fa [100 bytes]
+2026-03-17 17:01:52,397 [DEBUG] websockets.client – > BINARY 86 64 e6 cc 7f fa 1d 6f e1 69 dd d7 4d 46 d9 22 ... a0 91 44 c6 03 0d fa fa [95 bytes]
+2026-03-17 17:01:52,418 [DEBUG] websockets.client – > BINARY 3a 89 20 8a 19 5e 7a 11 4d 89 61 61 38 07 8f a9 ... f9 97 90 c7 03 0d fa fa [92 bytes]
+2026-03-17 17:01:52,446 [DEBUG] websockets.client – > BINARY 88 9a 8c 96 48 a4 e0 57 3c da c5 bb b7 54 ef 1a ... 7d 6f a6 c8 03 0d fa fa [93 bytes]
+2026-03-17 17:01:52,468 [DEBUG] websockets.client – < TEXT '{"type":"SpeechStarted","channel":[0,1],"timestamp":6.7}' [56 bytes]
+2026-03-17 17:01:52,468 [DEBUG] websockets.client – > BINARY 7b 15 93 c2 ec 92 35 32 9d 55 74 da 85 d8 d9 50 ... 35 a0 d1 c9 03 0d fa fa [89 bytes]
+2026-03-17 17:01:52,486 [DEBUG] websockets.client – > BINARY 5c e0 a7 9d 7c a0 42 3b bf 02 d3 db 62 a7 19 d6 ... f9 3a 6d ca 03 0d fa fa [99 bytes]
+2026-03-17 17:01:52,497 [DEBUG] websockets.client – > BINARY f1 32 b2 8c 97 f5 72 e5 3c 28 d6 66 f0 8d 23 11 ... dc f1 bd cb 03 0d fa fa [92 bytes]
+2026-03-17 17:01:52,519 [DEBUG] websockets.client – > BINARY f0 10 7d c1 60 a5 da 39 44 a0 00 53 e5 bb 77 aa ... b2 51 56 cc 03 0d fa fa [88 bytes]
+2026-03-17 17:01:52,545 [DEBUG] websockets.client – > BINARY 0a f2 57 1a 62 8c 9e 0e f8 43 4e ab f0 99 8d bf ... b6 f7 12 cd 03 0d fa fa [88 bytes]
+2026-03-17 17:01:52,562 [DEBUG] websockets.client – > BINARY 16 72 70 2b e6 ec 9c 0c e3 87 91 e8 0d 49 62 01 ... da 31 8d ce 03 0d fa fa [88 bytes]
+2026-03-17 17:01:52,574 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:52,592 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:52,999 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:53,021 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:53,422 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:53,444 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:53,887 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:53,904 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:53,911 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:55,978 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:55,995 [DEBUG] websockets.client – > BINARY d4 a8 ee cf 90 2b ce aa bc 7e 7b 8b 05 66 de 61 ... 2d a9 ea f1 03 0d fa fa [173 bytes]
+2026-03-17 17:01:56,018 [DEBUG] websockets.client – > BINARY af 10 e5 7d 27 b6 85 3d 41 6f ed 30 45 f5 4d f6 ... 4b 9f 6d f2 03 0d fa fa [166 bytes]
+2026-03-17 17:01:56,035 [DEBUG] websockets.client – > BINARY 83 12 19 d4 f5 8e c3 61 3b 30 27 0a df 23 7d c2 ... 23 0b 1a f3 03 0d fa fa [168 bytes]
+2026-03-17 17:01:56,059 [DEBUG] websockets.client – > BINARY 4b 0e a6 2a 2f 56 86 3f 45 da c0 24 18 0a c8 76 ... 59 62 fb f4 03 0d fa fa [176 bytes]
+2026-03-17 17:01:56,079 [DEBUG] websockets.client – > BINARY 96 66 93 9e e6 97 8b bb 20 bd da f8 41 93 f6 04 ... 29 23 e1 f5 03 0d fa fa [170 bytes]
+2026-03-17 17:01:56,183 [DEBUG] websockets.client – > BINARY db 96 f0 6b 4a bc 34 a0 bb 21 76 71 fc a7 4c 2f ... 2f 03 e1 f6 03 0d fa fa [198 bytes]
+2026-03-17 17:01:56,193 [DEBUG] websockets.client – > BINARY ea f8 f1 fa f0 96 0b 21 81 73 4d b0 22 d9 8b 98 ... 71 64 24 f7 03 0d fa fa [183 bytes]
+2026-03-17 17:01:56,268 [DEBUG] websockets.client – > BINARY 31 d2 6b a2 02 42 86 a1 f8 f2 d2 eb 6e 50 e6 4e ... 7a b5 a0 f8 03 0d fa fa [193 bytes]
+2026-03-17 17:01:56,394 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [409 bytes]
+2026-03-17 17:01:56,405 [DEBUG] websockets.client – > BINARY d1 7f a1 3a 03 d9 01 ca 05 e2 3c d9 60 ec 0d 88 ... 9a 73 85 f9 03 0d fa fa [181 bytes]
+2026-03-17 17:01:56,417 [DEBUG] websockets.client – > BINARY 60 16 8b b0 e9 3e a5 6a 7d 1d 9d f2 51 e9 f2 04 ... a8 9e 33 fa 03 0d fa fa [196 bytes]
+2026-03-17 17:01:56,589 [DEBUG] websockets.client – < TEXT '{"type":"SpeechStarted","channel":[0,1],"timestamp":7.49}' [57 bytes]
+2026-03-17 17:01:56,762 [DEBUG] websockets.client – > BINARY 4d e9 24 3f 14 61 00 5b 96 8f d0 ea 3c b8 b5 6b ... c6 af de fb 03 0d fa fa [178 bytes]
+2026-03-17 17:01:56,772 [DEBUG] websockets.client – > BINARY 97 e6 70 b4 94 08 3c 6c 18 09 31 a8 39 da a8 21 ... fc 78 ad fc 03 0d fa fa [190 bytes]
+2026-03-17 17:01:56,781 [DEBUG] websockets.client – > BINARY 1f 77 ad 1d ef 76 bd 05 76 2e 1c 98 7b dc d6 01 ... 66 c8 42 fd 03 0d fa fa [185 bytes]
+2026-03-17 17:01:56,783 [DEBUG] websockets.client – > BINARY 14 da 54 54 01 f7 61 74 de ab 6b a5 85 e9 d0 e4 ... 2c 6a 78 fe 03 0d fa fa [182 bytes]
+2026-03-17 17:01:56,792 [DEBUG] websockets.client – > BINARY 94 a4 e4 cb fc 58 90 bd 9f 4e 42 c4 4a 83 17 8e ... cc f8 91 ff 03 0d fa fa [172 bytes]
+2026-03-17 17:01:56,903 [DEBUG] websockets.client – > BINARY 66 8a 96 96 dd bc 1d ad 50 7b 72 8e eb e7 64 a7 ... 97 a0 1b 80 04 0d fa fa [178 bytes]
+2026-03-17 17:01:56,954 [DEBUG] websockets.client – > BINARY 0b 14 4f f8 c1 c4 2f 70 d7 9d 73 5e 13 2c 5f 4f ... c9 b9 49 81 04 0d fa fa [191 bytes]
+2026-03-17 17:01:56,965 [DEBUG] websockets.client – > BINARY bb c9 13 5d 12 19 bc e6 33 45 95 bd 60 26 6d 4b ... 0a 23 0d 82 04 0d fa fa [184 bytes]
+2026-03-17 17:01:56,984 [DEBUG] websockets.client – > BINARY 68 3c fa 67 db bc 91 36 95 97 1a ba f1 09 aa 03 ... c2 7b 00 83 04 0d fa fa [195 bytes]
+2026-03-17 17:01:57,098 [DEBUG] websockets.client – > BINARY 7c b0 6b e8 f3 b3 de d1 c5 96 60 d6 7f a6 b3 84 ... b3 1c f0 9f 04 0d fa fa [170 bytes]
+2026-03-17 17:01:57,127 [DEBUG] websockets.client – > BINARY 44 db 73 fc 9f 35 9e a2 a2 08 af 6e 24 a0 8a 20 ... bf eb 0b a0 04 0d fa fa [185 bytes]
+2026-03-17 17:01:57,135 [DEBUG] websockets.client – > BINARY eb a1 69 ec b3 1f c5 b9 a4 8e 01 3c 8e c4 02 47 ... 90 6e b1 a1 04 0d fa fa [178 bytes]
+2026-03-17 17:01:57,148 [DEBUG] websockets.client – > BINARY 1e 31 bd de a4 76 45 75 19 7b 35 04 68 bf f3 79 ... e8 f1 f3 a2 04 0d fa fa [174 bytes]
+2026-03-17 17:01:57,155 [DEBUG] websockets.client – > BINARY 37 bc ed e7 d0 c5 fb e3 b0 af 2c 6e 4d 24 50 23 ... 87 1b 4b a3 04 0d fa fa [168 bytes]
+2026-03-17 17:01:57,165 [DEBUG] websockets.client – > BINARY 64 55 62 29 ca fc ac 5b 7c 55 b4 88 af e7 81 b2 ... cc 38 3a a4 04 0d fa fa [166 bytes]
+2026-03-17 17:01:57,167 [DEBUG] websockets.client – > BINARY 1f ee 03 fb 1a 93 76 94 bd 2f cb 50 54 ce 62 1d ... 1b 17 07 a5 04 0d fa fa [173 bytes]
+2026-03-17 17:01:57,246 [DEBUG] websockets.client – > BINARY 65 e2 71 92 0c 7f 80 d6 58 f6 f0 ea 1f 63 c8 7e ... 03 3e bf a6 04 0d fa fa [192 bytes]
+2026-03-17 17:01:57,273 [DEBUG] websockets.client – > BINARY 5c 63 82 ba a5 31 d5 bc 05 e0 85 f8 8f 74 ee e5 ... f7 59 8a a7 04 0d fa fa [159 bytes]
+2026-03-17 17:01:57,282 [DEBUG] websockets.client – > BINARY 9d a3 e3 41 46 9f 37 ca 44 32 13 51 db 22 d1 2a ... cc cd 2d a8 04 0d fa fa [167 bytes]
+2026-03-17 17:01:57,283 [DEBUG] websockets.client – > BINARY 8c 39 6f 33 65 71 93 13 fe 13 88 43 9a 47 82 65 ... ac 28 5c a9 04 0d fa fa [172 bytes]
+2026-03-17 17:01:57,284 [DEBUG] websockets.client – > BINARY 1c ba 52 b0 95 66 c1 61 6a eb 7b d1 70 03 ed 93 ... cd b4 1f aa 04 0d fa fa [166 bytes]
+2026-03-17 17:01:57,287 [DEBUG] websockets.client – > BINARY 65 4a 49 87 c6 54 ff b5 f4 83 51 b4 6f 63 b6 ca ... 2f 6f 5b ab 04 0d fa fa [180 bytes]
+2026-03-17 17:01:57,289 [DEBUG] websockets.client – > BINARY 21 81 21 59 19 d6 0c 49 53 90 fc 6e 08 72 d0 08 ... f7 18 13 ac 04 0d fa fa [183 bytes]
+2026-03-17 17:01:57,290 [DEBUG] websockets.client – > BINARY b4 16 e2 80 63 15 a5 39 af 29 32 75 74 88 d3 ff ... 0d dc 23 ad 04 0d fa fa [181 bytes]
+2026-03-17 17:01:57,351 [DEBUG] websockets.client – > BINARY 16 c8 f9 1d 39 38 ea 1b 73 93 f4 b4 13 9f 63 41 ... 7d 58 b8 ae 04 0d fa fa [170 bytes]
+2026-03-17 17:01:57,383 [DEBUG] websockets.client – > BINARY e0 84 d4 3d 08 95 dd 37 32 2b 3d 22 c7 ad 86 de ... 66 07 f5 af 04 0d fa fa [171 bytes]
+2026-03-17 17:01:57,389 [DEBUG] websockets.client – > BINARY 56 71 bc 53 9c 2c 2c 97 b3 65 8b 0d c7 ea db f0 ... 69 d7 9a b0 04 0d fa fa [149 bytes]
+2026-03-17 17:01:57,395 [DEBUG] websockets.client – > BINARY 39 fd 9b 92 37 06 93 be c6 3f 25 fe 2f 0a 00 6b ... 93 af 52 b1 04 0d fa fa [128 bytes]
+2026-03-17 17:01:57,404 [DEBUG] websockets.client – > BINARY 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 ... 32 32 32 32 32 32 32 32 [50 bytes]
+2026-03-17 17:01:57,413 [DEBUG] websockets.client – > BINARY 90 0f 9a dd 53 bd d1 1f 49 e0 f1 14 51 3c 1a 6c ... 56 04 b7 b2 04 0d fa fa [108 bytes]
+2026-03-17 17:01:57,418 [WARNING] discord.ext.voice_recv.opus – 7 packets were lost being flushed in decoder-8493
+ --> (last=13612) [13614, 13613, 13615, 13616, 13617, 13618, 13619, 13620]
+2026-03-17 17:01:57,420 [DEBUG] websockets.client – > BINARY 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 ... 32 32 32 32 32 32 32 32 [50 bytes]
+2026-03-17 17:01:57,433 [DEBUG] websockets.client – > BINARY f2 61 fe 49 60 37 78 05 df 8d db a5 7a 12 84 e7 ... bb 48 e9 b9 04 0d fa fa [97 bytes]
+2026-03-17 17:01:57,463 [DEBUG] websockets.client – > BINARY c2 d3 d0 f8 75 c3 73 12 21 8f e3 3c 1e 52 e8 6c ... e9 48 37 ba 04 0d fa fa [95 bytes]
+2026-03-17 17:01:57,500 [DEBUG] websockets.client – > BINARY f2 6c 17 a7 cd ce d6 22 40 e3 37 2c 43 23 05 63 ... 08 f9 84 bb 04 0d fa fa [95 bytes]
+2026-03-17 17:01:57,602 [DEBUG] websockets.client – > BINARY 02 53 72 39 92 5d 54 a2 bb 08 e7 72 a2 36 c3 4f ... 65 2d 91 bc 04 0d fa fa [95 bytes]
+2026-03-17 17:01:57,603 [DEBUG] websockets.client – > BINARY 09 c4 3b b8 96 f0 79 73 f9 89 6f e3 2b 87 36 15 ... db 68 2c bd 04 0d fa fa [92 bytes]
+2026-03-17 17:01:57,605 [DEBUG] websockets.client – > BINARY 02 76 f0 77 06 25 37 3d 32 00 28 08 f1 35 7a 25 ... 15 f4 fb be 04 0d fa fa [92 bytes]
+2026-03-17 17:01:57,609 [DEBUG] websockets.client – > BINARY 6e fe c7 83 4f 50 b2 17 19 5a 29 ca 2f 3d 04 df ... 6b e1 be bf 04 0d fa fa [88 bytes]
+2026-03-17 17:01:57,611 [DEBUG] websockets.client – > BINARY fc 23 77 77 75 8e d2 f2 e6 4e ef 33 02 0c 1d 54 ... fa 8a 5e c0 04 0d fa fa [88 bytes]
+2026-03-17 17:01:57,614 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:57,615 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:57,806 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [408 bytes]
+2026-03-17 17:01:58,327 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:58,486 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:58,487 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:58,488 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:58,854 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:59,182 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:59,212 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:59,259 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:01:59,287 [DEBUG] websockets.client – > BINARY d0 d4 45 d7 bb bf 85 46 f0 c2 34 8b 90 12 1e 83 ... 80 cf ff cd 04 0d fa fa [182 bytes]
+2026-03-17 17:01:59,305 [DEBUG] websockets.client – > BINARY 9f 69 86 01 49 13 46 dd 83 44 98 ce 39 cb 91 de ... 74 56 27 ce 04 0d fa fa [174 bytes]
+2026-03-17 17:01:59,317 [DEBUG] websockets.client – > BINARY f5 a0 a8 ef 40 48 2c 9d 8c 71 9e 62 80 72 d5 64 ... 37 fd 5b cf 04 0d fa fa [189 bytes]
+2026-03-17 17:01:59,343 [DEBUG] websockets.client – > BINARY 80 59 fb 7a ae c8 a4 25 54 09 24 47 12 b5 a5 0f ... e0 3e 71 d0 04 0d fa fa [183 bytes]
+2026-03-17 17:01:59,365 [DEBUG] websockets.client – > BINARY e9 f3 fc 81 b2 42 24 6b e7 7f 31 b4 bc ad 8b e9 ... dc 46 9b d1 04 0d fa fa [167 bytes]
+2026-03-17 17:01:59,379 [DEBUG] websockets.client – > BINARY ef 45 ce 42 54 50 b0 0e e3 ad 85 0e 52 3f b4 6d ... f8 58 da d2 04 0d fa fa [182 bytes]
+2026-03-17 17:01:59,395 [DEBUG] websockets.client – > BINARY 46 ba 0c 9d 22 a6 53 86 7b 1b a3 b0 d1 63 dd 31 ... 3e 67 cc d3 04 0d fa fa [184 bytes]
+2026-03-17 17:01:59,415 [DEBUG] websockets.client – > BINARY 72 13 b1 8d 6b 2c c8 70 8f 15 38 2d 00 16 38 70 ... 2b 9e 0f d4 04 0d fa fa [171 bytes]
+2026-03-17 17:01:59,438 [DEBUG] websockets.client – > BINARY 2d 3c 1f b5 a3 de 3c 79 1e 94 8b a9 01 e3 d0 9f ... 7d 43 1e d5 04 0d fa fa [176 bytes]
+2026-03-17 17:01:59,461 [DEBUG] websockets.client – > BINARY 0e f5 e0 ca 85 30 75 38 35 eb d5 f5 7a 43 c6 98 ... dc 76 f0 d6 04 0d fa fa [172 bytes]
+2026-03-17 17:01:59,484 [DEBUG] websockets.client – > BINARY 0c 98 35 1e 56 26 6f d0 5c 05 dc d9 23 f6 82 a4 ... 93 63 3a d7 04 0d fa fa [164 bytes]
+2026-03-17 17:01:59,495 [DEBUG] websockets.client – > BINARY a5 b6 4a f7 ce ac ea 86 f2 34 32 8a 77 43 f4 bb ... 60 8d 6d d8 04 0d fa fa [159 bytes]
+2026-03-17 17:01:59,522 [DEBUG] websockets.client – > BINARY 82 75 8e f6 84 e3 df ad e2 61 f4 ab a5 a2 a1 3c ... f3 15 c5 d9 04 0d fa fa [162 bytes]
+2026-03-17 17:01:59,540 [DEBUG] websockets.client – > BINARY dc 47 ff c8 f0 56 4d c6 c9 48 d3 f8 a5 42 ca 16 ... bb 3b d2 da 04 0d fa fa [158 bytes]
+2026-03-17 17:01:59,575 [DEBUG] websockets.client – > BINARY 28 8e 9d cf 42 ad 14 9e c8 bc 35 02 ca 46 d2 7b ... 5a f4 c8 db 04 0d fa fa [171 bytes]
+2026-03-17 17:01:59,581 [DEBUG] websockets.client – > BINARY e7 ac 67 fc c7 ce de 22 8e 22 bb 1a f7 79 6b b2 ... 76 8e 6f dc 04 0d fa fa [175 bytes]
+2026-03-17 17:01:59,604 [DEBUG] websockets.client – > BINARY cb 64 0a 53 ca c4 d9 e6 de 60 cd 50 58 84 48 27 ... e4 25 91 dd 04 0d fa fa [171 bytes]
+2026-03-17 17:01:59,628 [DEBUG] websockets.client – > BINARY f7 a5 1a ac ec 16 4b 68 37 c7 1c d1 e6 6f 0e 59 ... 5a 71 12 de 04 0d fa fa [153 bytes]
+2026-03-17 17:01:59,648 [DEBUG] websockets.client – > BINARY 78 d0 d3 d9 4e 49 9d e5 08 af e6 ec 34 23 78 c4 ... f1 90 5b df 04 0d fa fa [126 bytes]
+2026-03-17 17:01:59,655 [DEBUG] websockets.client – > BINARY 4f b1 b2 08 49 c9 d9 4e 24 79 2a a9 14 12 8e 29 ... c8 cb f7 e0 04 0d fa fa [120 bytes]
+2026-03-17 17:01:59,689 [DEBUG] websockets.client – > BINARY 2f 39 59 ef 82 3b 07 50 89 28 44 e9 92 03 e2 e0 ... 3a 67 af e1 04 0d fa fa [104 bytes]
+2026-03-17 17:01:59,694 [DEBUG] websockets.client – < TEXT '{"type":"SpeechStarted","channel":[0,1],"timestamp":8.92}' [57 bytes]
+2026-03-17 17:01:59,707 [DEBUG] websockets.client – > BINARY 82 88 d8 dc 18 a2 78 a9 38 11 b9 a0 22 ef cb 68 ... 05 99 33 e2 04 0d fa fa [96 bytes]
+2026-03-17 17:01:59,718 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [402 bytes]
+2026-03-17 17:01:59,728 [DEBUG] websockets.client – > BINARY a0 62 05 bd 25 d7 64 f3 3e aa 45 e1 99 f7 ca c7 ... 45 3d 28 e3 04 0d fa fa [94 bytes]
+2026-03-17 17:01:59,751 [DEBUG] websockets.client – > BINARY 61 fe de 4a 95 11 f0 96 53 d9 5e e7 77 25 74 f4 ... 8f 60 ac e4 04 0d fa fa [92 bytes]
+2026-03-17 17:01:59,763 [DEBUG] websockets.client – > BINARY 18 89 f6 d0 e1 4d 7d 15 43 a4 4c 39 9d 4a 92 02 ... 86 bb 0f e5 04 0d fa fa [99 bytes]
+2026-03-17 17:01:59,779 [DEBUG] websockets.client – > BINARY 6d 55 5e 4d d0 6f db 4f f5 03 f5 8c c6 38 f9 17 ... e7 d2 63 e6 04 0d fa fa [95 bytes]
+2026-03-17 17:01:59,800 [DEBUG] websockets.client – > BINARY e0 ca aa 3c 06 62 88 27 42 3d 2b 31 12 90 fc a7 ... 2e 41 1a e7 04 0d fa fa [95 bytes]
+2026-03-17 17:01:59,815 [DEBUG] websockets.client – > BINARY af 54 d6 c8 63 74 78 04 c9 57 f1 d0 24 b0 03 82 ... a5 d8 db e8 04 0d fa fa [91 bytes]
+2026-03-17 17:01:59,846 [DEBUG] websockets.client – > BINARY 79 eb 73 3e 3d 1c 6a d1 9e b8 43 5a c3 f7 7e 51 ... 1e 1e 23 e9 04 0d fa fa [92 bytes]
+2026-03-17 17:01:59,859 [DEBUG] websockets.client – > BINARY 02 a8 1a 24 22 92 2c d1 1d 3c a5 70 b4 0b 40 91 ... 6b ce 6e ea 04 0d fa fa [88 bytes]
+2026-03-17 17:01:59,881 [DEBUG] websockets.client – > BINARY 18 23 95 86 cb 21 1d d6 19 01 61 22 f0 d1 ca 03 ... fc 2f f6 eb 04 0d fa fa [88 bytes]
+2026-03-17 17:01:59,902 [DEBUG] websockets.client – > BINARY ca 83 a5 d9 0c 8b 5d 4a 41 d7 7c a0 a6 27 b9 ce ... d9 57 86 ec 04 0d fa fa [88 bytes]
+2026-03-17 17:01:59,917 [DEBUG] websockets.client – > BINARY b3 a4 d0 e7 c4 79 d9 c4 d9 e5 b1 f3 45 58 2c d9 ... 75 e3 14 ed 04 0d fa fa [88 bytes]
+2026-03-17 17:01:59,935 [DEBUG] websockets.client – > BINARY 8e cd 2e 2c 6d ac 61 db ff f6 60 e3 cd 3d 3e 84 ... 5a 11 a6 ee 04 0d fa fa [88 bytes]
+2026-03-17 17:01:59,958 [DEBUG] websockets.client – > BINARY d7 5e aa 2f c5 92 48 e5 ed 5c 23 46 4e 86 e6 fb ... 43 36 d6 ef 04 0d fa fa [88 bytes]
+2026-03-17 17:01:59,976 [DEBUG] websockets.client – > BINARY 2e e3 4d 7f 6f 23 aa 15 5c 9c 37 4e 08 46 c8 ab ... 78 09 b5 f0 04 0d fa fa [96 bytes]
+2026-03-17 17:02:00,012 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:02:00,411 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:02:00,418 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:02:00,817 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:02:00,831 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:02:00,843 [DEBUG] websockets.client – < TEXT '{"type":"Results","channel_index":[0,1],"durati...,"from_finalize":false}' [410 bytes]
+2026-03-17 17:02:01,242 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:02:01,253 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:02:01,668 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:02:01,672 [DEBUG] websockets.client – > BINARY f8 ff fe [3 bytes]
+2026-03-17 17:02:14,098 [DEBUG] websockets.client – < TEXT '{"type":"Metadata","transaction_key":"deprecate...547","arch":"nova-3"}}}' [369 bytes]
+2026-03-17 17:02:14,101 [DEBUG] websockets.client – < CLOSE 1011 (internal error) Deepgram did not receive a... https://dpgr.am/net0001 [110 bytes]
+2026-03-17 17:02:14,101 [DEBUG] websockets.client – > CLOSE 1011 (internal error) Deepgram did not receive a... https://dpgr.am/net0001 [110 bytes]
+2026-03-17 17:02:14,102 [DEBUG] websockets.client – = connection is CLOSING
+2026-03-17 17:02:14,103 [DEBUG] websockets.client – < EOF
+2026-03-17 17:02:14,103 [DEBUG] websockets.client – > EOF
+2026-03-17 17:02:14,103 [DEBUG] websockets.client – = connection is CLOSED
+2026-03-17 17:02:14,106 [ERROR] deepgram.clients.common.v1.abstract_sync_websocket – ConnectionClosed in AbstractSyncWebSocketClient._listening with code 1011: Deepgram did not receive audio data or a text message within the timeout window. See https://dpgr.am/net0001
+2026-03-17 17:02:14,107 [ERROR] synchronvoice – Deepgram Live error user 951911415214665729: {
+    "description": "ConnectionClosed in AbstractSyncWebSocketClient._listening",
+    "message": "received 1011 (internal error) Deepgram did not receive audio data or a text message within the timeout window. See https://dpgr.am/net0001; then sent 1011 (internal error) Deepgram did not receive audio data or a text message within the timeout window. See https://dpgr.am/net0001",
+    "type": "ConnectionClosed"
+}
+2026-03-17 17:02:14,110 [ERROR] deepgram.clients.common.v1.abstract_sync_websocket – send() failed - ConnectionClosed: received 1011 (internal error) Deepgram did not receive audio data or a text message within the timeout window. See https://dpgr.am/net0001; then sent 1011 (internal error) Deepgram did not receive audio data or a text message within the timeout window. See https://dpgr.am/net0001

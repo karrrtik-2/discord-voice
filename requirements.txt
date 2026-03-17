@@ -1,0 +1,15 @@
+# ── Runtime ───────────────────────────────────────────────────────────────────
+# discord.py[voice] pulls in PyNaCl (encryption) and opus (audio codec)
+discord.py[voice]>=2.4.0
+
+# Per-user voice receiving for discord.py (no FFmpeg needed for receiving)
+discord-ext-voice-recv>=0.5.0
+
+# Groq SDK – Whisper Large v3 Turbo transcription
+groq>=0.9.0
+
+# Loads .env into os.environ
+python-dotenv>=1.0.0
+
+# ── Dev / testing ─────────────────────────────────────────────────────────────
+pytest>=7.4.0

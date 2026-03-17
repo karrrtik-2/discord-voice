@@ -1,0 +1,11 @@
+=== SynchronVoice Transcription Session ===
+Channel : General
+Started : 2026-03-17 16:47:00
+============================================
+
+
+============================================
+Ended    : 2026-03-17 16:47:22
+Duration : 00h 00m 21s
+Speakers : 0
+Segments : 0
