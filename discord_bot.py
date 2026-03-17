@@ -13,7 +13,7 @@ discord_bot.py  —  SynchronVoice Employee Transcription Bot (py-cord edition)
 
 Install:
     pip uninstall discord.py discord-ext-voice-recv -y
-    pip install py-cord deepgram-sdk python-dotenv
+    pip install git+https://github.com/Pycord-Development/pycord.git deepgram-sdk python-dotenv
 
 .env:
     DISCORD_BOT_TOKEN = ...
@@ -196,11 +196,12 @@ class TranscriptionSession:
 # ─────────────────────────────────────────────────────────────────────────────
 # EmployeeSink  —  py-cord native Sink subclass
 #
-# HOW py-cord sinks work:
+# HOW py-cord sinks work (v2.8+):
 #   • vc.start_recording(sink, finished_cb, channel) starts capture.
-#   • py-cord's internal reader decrypts + decodes every Opus packet.
-#   • For every decoded PCM frame it calls sink.write(user_id, AudioData).
-#   • AudioData.file is a BytesIO that GROWS over time (append-only).
+#   • py-cord's internal reader decrypts + decodes every Opus packet (DAVE-aware).
+#   • For every decoded PCM frame it calls sink.write(data, user_id).
+#   • The SinkEventRouter requires __sink_listeners__ on the sink class —
+#     it's a list of (event_name, method_name) tuples. Empty = no events.
 #   • vc.stop_recording() drains remaining audio then fires finished_cb.
 #
 # Our write() hook:
@@ -213,6 +214,10 @@ class TranscriptionSession:
 # ─────────────────────────────────────────────────────────────────────────────
 
 class EmployeeSink(Sink):
+    # Required by py-cord v2.8 SinkEventRouter.
+    # List of (event_name, method_name) tuples — empty since we use no sink events.
+    __sink_listeners__: list = []
+
     def __init__(
         self,
         bot: commands.Bot,
@@ -434,7 +439,7 @@ async def _start_session(channel: discord.VoiceChannel) -> None:
         session = TranscriptionSession(guild.id, channel.name)
         sink    = EmployeeSink(bot, session, text_channel)
 
-        # py-cord native recording — calls sink.write(user_id, AudioData) per frame
+        # py-cord native recording — calls sink.write(data, user_id) per frame
         vc.start_recording(sink, _recording_finished, channel)
         sink.start_flush_loop()
 
